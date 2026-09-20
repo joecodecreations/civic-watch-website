@@ -857,8 +857,10 @@ p {
 }
 .controls-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  max-width: 1040px;
+  margin-inline: auto;
 }
 .control-diagram {
   display: block;
@@ -868,8 +870,8 @@ p {
 }
 .control-diagram img {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
+  height: auto;
+  display: block;
   background: #000;
 }
 .control-diagram > span {
@@ -894,7 +896,7 @@ p {
   margin-top: 22px;
 }
 .legal .controls-grid {
-  grid-template-columns: 1fr;
+  max-width: none;
   margin: 20px 0 24px;
 }
 .gallery-section {
@@ -1473,7 +1475,7 @@ dialog::backdrop {
     grid-template-columns: repeat(2, 1fr);
   }
   .controls-grid {
-    gap: 18px;
+    gap: 22px;
   }
   .faq-section {
     gap: 40px;
@@ -1875,8 +1877,10 @@ dialog::backdrop {
     grid-template-columns: 1fr;
   }
   .controls-grid {
-    grid-template-columns: 1fr;
-    gap: 22px;
+    gap: 20px;
+  }
+  .control-diagram img {
+    padding: 6px 2px;
   }
   .gallery-image img {
     aspect-ratio: 16/9;
