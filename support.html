@@ -49,7 +49,7 @@
         <nav id="navigation" aria-label="Main navigation">
           <a href="./#game">The game</a><a href="./#characters">The locals</a
           ><a href="./#arenas">Arenas</a><a href="story.html">The story</a
-          ><a href="./#gallery">Gallery</a
+          ><a href="./#controls">Controls</a><a href="./#gallery">Gallery</a
           ><a class="button small" href="./#join"
             >JOIN THE WATCH <span>↗</span></a
           >
@@ -94,6 +94,45 @@
             the laser module.
           </li>
         </ol>
+
+        <h2>Xbox controller</h2>
+        <p>
+          Labeled for Civic Watch. Tap a diagram to enlarge. Landscape touch
+          and gyro still work without a pad.
+        </p>
+        <div class="controls-grid">
+          <a
+            class="control-diagram"
+            href="assets/controls/xbox-front.webp"
+            aria-label="Enlarge Xbox face-button diagram"
+            data-lightbox
+            ><img
+              src="assets/controls/xbox-front.webp"
+              alt="Xbox controller face mapped to Civic Watch: left stick move and L3 sprint, right stick look and R3 crouch, A jump, B emote, X reload or use, Y next gun, LB grenade, RB knife, View scoreboard, Menu pause, d-pad up grenade type, left flashlight, down night vision, right laser."
+              width="1920"
+              height="1080"
+              loading="lazy"
+            /><span
+              >Face, sticks, d-pad and bumpers<b aria-hidden="true">↗</b></span
+            ></a
+          ><a
+            class="control-diagram"
+            href="assets/controls/xbox-triggers.webp"
+            aria-label="Enlarge Xbox trigger diagram"
+            data-lightbox
+            ><img
+              src="assets/controls/xbox-triggers.webp"
+              alt="Xbox controller triggers mapped to Civic Watch: left trigger aims, right trigger fires."
+              width="1920"
+              height="1080"
+              loading="lazy"
+            /><span>Triggers — aim and fire<b aria-hidden="true">↗</b></span></a
+          >
+        </div>
+        <p class="muted">
+          Combos: LT + D-up first/third person · LT + D-down swap shoulder · L3
+          / R3 while aiming lean.
+        </p>
 
         <h2>FAQ</h2>
         <div class="faq">
@@ -172,6 +211,11 @@
         </div>
       </article>
     </main>
+    <dialog id="lightbox" aria-labelledby="lightbox-caption">
+      <button class="dialog-close" aria-label="Close diagram">×</button
+      ><img id="lightbox-image" alt="" />
+      <p id="lightbox-caption"></p>
+    </dialog>
     <footer class="wrap footer">
       <div class="footer-top">
         <a class="brand" href="./"
