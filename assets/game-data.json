@@ -1,0 +1,299 @@
+{
+  "roster": [
+    {
+      "id": "brenda",
+      "name": "BRENDA",
+      "role": "MINIVAN LOGISTICS COMMANDER",
+      "bio": "Soccer-mom logistics commander. Minivan is a mobile HQ: snacks, meds, folding chairs, six schedules, enough pressure to mobilize a nation. She's been running warzone rotations since travel-team snack duty. UAV: the group chat.",
+      "bot": false
+    },
+    {
+      "id": "hank",
+      "name": "HANK",
+      "role": "ACTUALLY-PREPARED FARM OPERATOR",
+      "bio": "Farmer who unlocked max preparedness by owning actual tools. Generators, fuel, food, zero patience for anyone who needs a tutorial to use a shovel. This man has a real loadout. Everyone else has a battle pass.",
+      "bot": false
+    },
+    {
+      "id": "pearl",
+      "name": "PEARL",
+      "role": "CASSEROLE-AND-CARBINE GRANDMA",
+      "bio": "Sweet grandmother operator. Makes casseroles that could clutch a search-and-destroy and enemies who wish they'd stayed for dessert. Patient, nurturing, still has range. Launcher: grandma's casserole dish. Don't test the cook time.",
+      "bot": false
+    },
+    {
+      "id": "preston",
+      "name": "PRESTON",
+      "role": "BYLAW-QUOTING HOA WARLORD",
+      "bio": "HOA president who finally got the authority of a faction leader. Quotes bylaws mid-gunfight. Will stop a firefight because your barricade violates setback. Scorestreak: citation. Perk: cold-blooded toward fun.",
+      "bot": false
+    },
+    {
+      "id": "rook",
+      "name": "ROOK",
+      "role": "FIELD OPERATIVE",
+      "bio": "Has been shot so many times he lists it as a hobby. Retiring next week. Has said that for eleven years.",
+      "bot": false
+    },
+    {
+      "id": "viper",
+      "name": "VIPER",
+      "role": "SPECIAL OPERATIONS",
+      "bio": "Decorated commando. Navy uniform, maroon beret, forty medals, zero chill. Touch the beret and the war starts.",
+      "bot": false
+    },
+    {
+      "id": "nyx",
+      "name": "PANDORA",
+      "role": "FRONT-CAM HOT-DROP INFLUENCER",
+      "bio": "Influencer operator. Zero tactical awareness, unlimited front-cam confidence. Will push a hot drop if the lighting is cracked. Treats every gunfight like a brand deal and every downed teammate like B-roll. Perk: High Alert for views only.",
+      "bot": false
+    },
+    {
+      "id": "warren",
+      "name": "WARREN",
+      "role": "WHEEZING BASEMENT CAMPER",
+      "bio": "Basement operator with 8,000 hours of FPS \"training.\" Wheezes like a dying laptop, covered in crumbs, convinced real life needs a balance patch. Camps the snack drawer, calls every death cheap, still waiting on the respawn. Wildcard: Overkill, both weapons are Doritos.",
+      "bot": false
+    },
+    {
+      "id": "crane",
+      "name": "CRANE",
+      "role": "WALKING HITBOX RUMOR",
+      "bio": "Human exclamation point. Impossibly tall, painfully skinny, built like a decorative floor lamp with knees. Hitbox is a rumor. Upper-body strength cannot ADS a riot shield. Tactical: smoke, because that's the only cover his silhouette gets.",
+      "bot": false
+    },
+    {
+      "id": "starlet",
+      "name": "STARLET",
+      "role": "ALMOST-FAMOUS SOCCER ACTRESS",
+      "bio": "Stay-at-home mom / aspiring actress, \"almost famous\" since the last prestige reset. Has an agent, headshots, immaculate nails, and a K/D made of callbacks that went to someone else. This war is her season premiere if the lighting holds. Field upgrade: trophy system for her ego.",
+      "bot": false
+    },
+    {
+      "id": "sentry",
+      "name": "SENTRY",
+      "role": "SECURITY COMMANDO",
+      "bio": "Armored security in olive fatigues and desert equipment.",
+      "bot": true
+    },
+    {
+      "id": "wraith",
+      "name": "WRAITH",
+      "role": "INTELLIGENCE OPERATIVE",
+      "bio": "A sharp-eyed rival in a burgundy field jacket.",
+      "bot": true
+    },
+    {
+      "id": "neb",
+      "name": "NEB",
+      "role": "META GAMER, ZERO CARDIO",
+      "bio": "Competitive gamer trapped in a body that rage-quits cardio. Knows every meta, every exploit, every callout \u2014 standing up is an advanced slide cancel. Cheeto dust is camo and restock. Lethal: semtex, if he can reach the kitchen.",
+      "bot": false
+    },
+    {
+      "id": "rico",
+      "name": "RICO",
+      "role": "CONTRACT-BLIND STREET HUSTLER",
+      "bio": "Cuban-American hustler operator. Confidence of a billionaire, contract literacy of a raccoon. Will sell you a loadout drop, invoice the gulag, and vanish before anyone reads the fine print. Streak: UAV for \"business opportunities.\"",
+      "bot": false
+    },
+    {
+      "id": "raven",
+      "name": "RAVEN",
+      "role": "EMO ANIME ANTIHERO",
+      "bio": "Emo anime final-boss of a Hot Topic. Drops Japanese with dangerous confidence, treats a driveway argument like an eight-season campaign. Misunderstood antihero of Fairview. Finishing move: lore dump. Nobody asked.",
+      "bot": false
+    },
+    {
+      "id": "stoney",
+      "name": "STONEY",
+      "role": "AFK-IN-A-FIREFIGHT SLACKER",
+      "bio": "So relaxed he looks AFK in a firefight. Walks through explosions with the same face he gives a microwave at 0:30. Dead Silence is just his resting heart rate. Ultimate: ignore the ping.",
+      "bot": false
+    },
+    {
+      "id": "libby",
+      "name": "LIBBY",
+      "role": "TRIGGER-HAPPY THERAPY GLOSSARY",
+      "bio": "Pink-and-blue walking glossary of therapy terms. IDs your toxic traits before your gamertag. Dozens of triggers, hundreds of boundaries, one emotional-support French bulldog named Validation who mainly loots dropped snacks. Tactical: flashbang labeled \"let's circle back.\"",
+      "bot": false
+    },
+    {
+      "id": "harold",
+      "name": "HAROLD",
+      "role": "INFLATION-RAGED ANCIENT RETIREE",
+      "bio": "Ancient skinny retiree held together by prescriptions, stubbornness, and 1968 hamburger prices. Forgets why he entered the room. Remembers civilization peaked before microwave popcorn. Scorestreak: complaint about inflation. Relentless.",
+      "bot": false
+    },
+    {
+      "id": "lola",
+      "name": "LOLA",
+      "role": "NO-INDOOR-VOICE FLIRT TANK",
+      "bio": "Loud glamorous Colombian-American operator. Giant hoops, gym confidence, no indoor voice. Thick, athletic, irresistible \u2014 an insult doesn't count unless it becomes flirting. Slide-cancels into the argument. Lethal: words.",
+      "bot": false
+    },
+    {
+      "id": "floyd",
+      "name": "FLOYD",
+      "role": "ALL-KNOWING COMBAT MAILMAN",
+      "bio": "Veteran mailman. Knows every street, every family, every dog, and too much intel. Delivered through rain, snow, heat, and active gunfire. The loose German shepherd is still the real boss fight. Streak: care package, it's your mail.",
+      "bot": false
+    },
+    {
+      "id": "kelsey",
+      "name": "KELSEY",
+      "role": "$12/HR BABYSITTER GHOST",
+      "bio": "Babysitter operator. Contract: $12/hr, unlimited snacks, Wi-Fi, flexible reading of \"no friends over.\" Fears almost nothing except a dead battery and parents who said 9. Perk: Ghost, until the phone dies.",
+      "bot": false
+    },
+    {
+      "id": "eric",
+      "name": "ERIC",
+      "role": "AI-REPLACED TICKET ENGINEER",
+      "bio": "Ex six-figure software engineer, replaced by AI, now in a full identity crisis. Treats every human problem like a Jira ticket. Needs you to know the AI still can't do what he did. He also can't remember the patch notes. Wildcard: convert a 1v1 into a standup.",
+      "bot": false
+    },
+    {
+      "id": "keisha",
+      "name": "KEISHA",
+      "role": "COUPON-RECON CASHIER SNIPER",
+      "bio": "Grocery cashier with perfect recon. Knows who lies about coupons, who buys frozen pizza at 01:00, and how long to stare until they put the dignity back on the belt. High Alert is just her customer-service face.",
+      "bot": false
+    },
+    {
+      "id": "priya",
+      "name": "PRIYA",
+      "role": "YOGA-CLOTHES ROAD-RAGE MONK",
+      "bio": "Full-time yoga-clothes operator, part-time yoga. Mindfulness, hydration, protecting her peace \u2014 and screaming at anyone who merges without a blinker. Dead Silence until traffic. Then it's a cruise missile.",
+      "bot": false
+    },
+    {
+      "id": "rosa",
+      "name": "ROSA",
+      "role": "STAIN-INTEL HOUSEKEEPER SPY",
+      "bio": "Veteran housekeeper. Has cleaned enough homes to know every family is one stain away from a documentary. Notices everything, forgets nothing, has judged mattresses that could end marriages. Intel: better than a UAV.",
+      "bot": false
+    },
+    {
+      "id": "cal",
+      "name": "CAL",
+      "role": "GAME-SEVEN HUSTLE COACH",
+      "bio": "Youth baseball coach who treats crossing the street like Game Seven, bottom of the ninth. Visor, whistle, clipboards, zero chill. Walking instead of hustling is a personal betrayal. Voice line: \"HUSTLE.\" On repeat.",
+      "bot": false
+    },
+    {
+      "id": "wayne",
+      "name": "WAYNE",
+      "role": "CURB-LOOT SANITATION PROPHET",
+      "bio": "Garbage man whose whole meta is what people leave at the curb. Couches, toilets, TVs, mystery bags, enough illegal bulk trash to conclude the apocalypse is a public service. Loadout drop: whatever didn't make the truck.",
+      "bot": false
+    },
+    {
+      "id": "pepe",
+      "name": "PEPE",
+      "role": "OFF-COMMS TACO LEGEND",
+      "bio": "Taco-truck legend. Mustache with its own zip code. Health grade best discussed off comms. Believes sanitation scores are political and the line outside the truck is the only certification that matters. Care package: al pastor.",
+      "bot": false
+    },
+    {
+      "id": "brock",
+      "name": "BROCK",
+      "role": "CHANT-FIRST FRAT RUSHER",
+      "bio": "Frat bro operator. Confidence maxed, tactical IQ of a shopping cart on a hill. Every situation can be fixed by making it a contest, chanting, or sending three guys first. Streak: cluster strike of bad ideas.",
+      "bot": false
+    },
+    {
+      "id": "clair",
+      "name": "CLAIR",
+      "role": "SORORITY RECON TACTICIAN",
+      "bio": "Polished sorority intel agent. Flawless makeup, maps alliances, weakness, gossip, and situationships faster than most people map incoming fire. Better recon than a portable radar. Don't 1v1 her socially.",
+      "bot": false
+    },
+    {
+      "id": "pierre",
+      "name": "PIERRE",
+      "role": "PINK-SHORTS DRIP ASSASSIN",
+      "bio": "Slim, stylish operator in tiny pink shorts. Social collapse is not an excuse to dress like a default skin. Brutally observant. Can delete a man's self-esteem by noticing one insecure shoe. Finisher: outfit check. The war can wait.",
+      "bot": false
+    }
+  ],
+  "maps": [
+    {
+      "id": "facility",
+      "title": "Research Facility",
+      "blurb": "Tiled washrooms, laboratories, six processing tanks and a loading bay."
+    },
+    {
+      "id": "dam",
+      "title": "Hydro Dam",
+      "blurb": "Watchtowers on the dam crest, a service gallery and canyon water."
+    },
+    {
+      "id": "archives",
+      "title": "Archives",
+      "blurb": "Government offices, dense book stacks and connected reading halls."
+    },
+    {
+      "id": "complex",
+      "title": "Industrial Complex",
+      "blurb": "Interlocking red and blue wings with a raised central crosswalk."
+    },
+    {
+      "id": "temple",
+      "title": "Stone Temple",
+      "blurb": "Monumental stone pillars, a raised altar and looping crypt galleries."
+    },
+    {
+      "id": "streets",
+      "title": "Night Streets",
+      "blurb": "Moonlit stone facades, open interiors and broad Eastern European streets."
+    },
+    {
+      "id": "bunker",
+      "title": "Command Bunker",
+      "blurb": "Satellite control screens, holding cells, armory and blast corridors."
+    },
+    {
+      "id": "silo",
+      "title": "Missile Silo",
+      "blurb": "A towering rocket, fuel laboratories and a climbable gantry circuit."
+    },
+    {
+      "id": "yacht",
+      "title": "Miami Yacht",
+      "blurb": "Aurora VII tied to a Biscayne marina, teak decks, cabins and the Miami skyline."
+    },
+    {
+      "id": "market",
+      "title": "Mega Mart",
+      "blurb": "A wholesale warehouse club: ten racked aisles, checkouts, a frozen wall, food court and a striped parking lot."
+    },
+    {
+      "id": "neighborhood",
+      "title": "Maple Court",
+      "blurb": "A golden-hour suburb: two streets, back-to-back backyards, ten enterable homes and windows that shatter."
+    },
+    {
+      "id": "range",
+      "title": "Gun Range",
+      "blurb": "Four indoor lanes with motorized target carriers, every weapon racked on the armory wall, and a walled desert range of steel knockdowns outside."
+    }
+  ],
+  "weapons": [
+    ["kestrel", "Kestrel", "Pistol"],
+    ["magnum", "Magnum", "Revolver"],
+    ["ripper", "Ripper", "SMG"],
+    ["kf47", "KF-47", "Rifle"],
+    ["storm90", "Storm 90", "SMG"],
+    ["sentinel", "Sentinel", "Sniper"],
+    ["thunder", "Thunder", "Shotgun"],
+    ["nightshade", "Nightshade", "Suppressed"],
+    ["atlas", "Atlas", "Rocket launcher"],
+    ["ak47", "AK-47", "Rifle"],
+    ["m249", "M249 SAW", "Machine gun"],
+    ["scar16", "FN SCAR 16S", "Rifle"],
+    ["badger", "Badger", "Rifle"],
+    ["mp5", "MP5", "SMG"]
+  ]
+}
