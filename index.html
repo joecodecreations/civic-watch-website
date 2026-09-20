@@ -103,27 +103,25 @@
             <a href="#game" class="scroll-cue"
               ><span>↓</span> SCROLL TO INVESTIGATE</a
             >
-            <div class="art-controls">
-              <span>LOADING SCREEN ARCHIVE</span
-              ><button
-                data-hero="0"
-                aria-label="Show neighborhood watch artwork"
-                aria-pressed="true"
+            <div class="art-controls" aria-label="Loading-screen slideshow">
+              <span>LOADING SCREEN ARCHIVE</span>
+              <output
+                id="hero-position"
+                aria-live="off"
+                aria-label="Current artwork"
+                >01 / 09</output
               >
-                01</button
-              ><button
-                data-hero="1"
-                aria-label="Show Rook and Viper artwork"
-                aria-pressed="false"
-              >
-                02</button
-              ><button
-                data-hero="2"
-                aria-label="Show Rico and Lola artwork"
-                aria-pressed="false"
-              >
-                03
+              <button id="hero-previous" aria-label="Previous loading screen">
+                ←
               </button>
+              <button
+                id="hero-pause"
+                aria-label="Pause loading-screen slideshow"
+                aria-pressed="false"
+              >
+                Ⅱ
+              </button>
+              <button id="hero-next" aria-label="Next loading screen">→</button>
             </div>
           </div>
         </div>
@@ -1525,7 +1523,13 @@
     <footer class="wrap footer">
       <div class="footer-top">
         <a class="brand" href="./"
-          ><span class="brand-mark" aria-hidden="true">✦</span>CIVIC WATCH</a
+          ><img
+            class="brand-icon"
+            src="assets/icon.webp"
+            width="46"
+            height="46"
+            alt=""
+          />CIVIC WATCH</a
         >
         <p>GOOD NEIGHBORS. QUESTIONABLE JUDGMENT.</p>
         <a href="#main">BACK TO TOP ↑</a>

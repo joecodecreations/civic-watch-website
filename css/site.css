@@ -2035,3 +2035,56 @@ dialog::backdrop {
     border: 0;
   }
 }
+
+/* Incoming artwork fades over the current scene beneath the existing gradients. */
+.hero-art .hero-incoming {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: none;
+}
+#hero-position {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--gold);
+  margin-right: 8px;
+  white-space: nowrap;
+}
+html:not(.js) .art-controls {
+  display: none;
+}
+@media (max-width: 360px) {
+  #hero-position {
+    font-size: 7px;
+    margin-right: 2px;
+  }
+  .art-controls {
+    gap: 4px;
+  }
+}
+
+.brand-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 9px;
+  border: 1px solid #78643f;
+}
+.hero-art img {
+  animation: none;
+}
+@media (max-width: 600px) {
+  .brand-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 7px;
+  }
+}
+@media (max-width: 360px) {
+  .nav .brand-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+  }
+}

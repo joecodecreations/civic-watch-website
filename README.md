@@ -23,7 +23,7 @@ node --check js/site.js
 - `story.html`: full canonical Fairview backstory.
 - `support.html`, `privacy.html`, `terms.html`: existing game support and legal content, with updated shared design and URLs.
 - `css/site.css`: responsive styles, animations and reduced-motion behavior. Colors match the game's `UiChrome`: ink `#080f15`, gold `#d9b66e`, text `#e7e8e6`, panel `#111b23`, line `#2b353b`.
-- `js/site.js`: accessible native dialogs, roster search/filtering, arena selection, hero artwork switching, navigation and scroll reveals.
+- `js/site.js`: accessible native dialogs, roster search/filtering, arena selection, a randomized nine-scene hero slideshow (6-second hold, 1.2-second crossfade, previous/next and pause controls; pauses offscreen and in hidden tabs, starts paused for reduced motion), navigation and scroll reveals.
 - `assets/`: optimized copies of the game's loading art, portraits, map previews and weapon previews. Fonts are self-hosted Barlow and Barlow Condensed; OFL license is included.
 - `assets/game-data.json`: reference snapshot of the game catalog. The site renders content from HTML, so edit the HTML when changing the public copy.
 
