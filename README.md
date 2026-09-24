@@ -19,7 +19,7 @@ node --check js/site.js
 
 ## Editing
 
-- `index.html`: game overview, searchable cast, arena picker, arsenal, Xbox controller diagrams, gallery, FAQs and closed-beta notice.
+- `index.html`: game overview, searchable cast, arena picker, arsenal, Xbox controller diagrams, gallery, FAQs and beta invitation.
 - `story.html`: full canonical Fairview backstory.
 - `support.html`, `privacy.html`, `terms.html`: existing game support and legal content, with updated shared design and URLs.
 - `css/site.css`: responsive styles, animations and reduced-motion behavior. Colors match the game's `UiChrome`: ink `#080f15`, gold `#d9b66e`, text `#e7e8e6`, panel `#111b23`, line `#2b353b`.
@@ -29,7 +29,7 @@ node --check js/site.js
 
 Keep descriptive copy consistent with the game. There are **29 selectable operatives**, **2 bot-only rivals**, **11 arenas**, a separate practice range and **14 firearms**. Personality jokes are not ability descriptions. Zombie skins in the source catalog are upcoming content and are not advertised as released. Loading illustrations are explicitly labeled separately from in-game arena previews.
 
-The public TestFlight invitation is not published on this site. Do not add a TestFlight or App Store join link until access is intentionally reopened.
+The TestFlight invitation was carried over from the existing game website and verified to resolve to **Civic Watch FPS** on September 20, 2026. Beta places and supported builds are controlled by App Store Connect. It was taken off the site on September 21, 2026 and put back on September 24, 2026.
 
 ## GitHub Pages
 
