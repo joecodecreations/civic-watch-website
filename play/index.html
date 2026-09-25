@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101817">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="game.png">
+<title>Research Facility · Civic Watch Demo</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#101817;color:#edf1e6;font-family:system-ui,sans-serif}body{overflow:hidden}main{height:100dvh;display:grid;place-items:center;padding:28px;background:radial-gradient(ellipse at 75% 25%,#284537,transparent 60%)}article{max-width:640px}.eyebrow{font-size:12px;letter-spacing:.22em;color:#bbcf99}h1{font-size:clamp(44px,8vw,76px);line-height:1;letter-spacing:-.055em;margin:24px 0}p{line-height:1.6;color:#b9c4ba}.tag{display:inline-block;border:1px solid #53614e;padding:7px 12px;border-radius:30px;margin:3px;font-size:12px}button{cursor:pointer;background:#d5e8a1;color:#182111;border:0;border-radius:6px;padding:18px 26px;font-size:16px;font-weight:700;min-height:48px}button:focus-visible,a:focus-visible{outline:3px solid white;outline-offset:4px}small{display:block;margin-top:18px;color:#abb6a5}a{color:#d5e8a1}#canvas{display:none;position:fixed;inset:0;width:100%;height:100dvh;border:0;background:#101817;touch-action:none}#fullscreen{display:none;position:fixed;bottom:max(8px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:3;padding:10px 14px;font-size:12px;background:#18251ed9;color:#e2edce;border:1px solid #53614e}#hint{display:none;position:fixed;bottom:env(safe-area-inset-bottom,0px);left:0;right:0;background:#18251eee;text-align:center;padding:8px;font-size:12px;pointer-events:none;z-index:4}#status{min-height:24px}@media(orientation:portrait) and (pointer:coarse){body.playing #hint{display:block}}
+</style>
+</head>
+<body>
+<main id="welcome"><article><div class="eyebrow">CIVIC WATCH / PLAYABLE DEMO</div><h1>Research<br>Facility.</h1><p>The night shift has taken a turn. Step into Rook’s boots and hold off the horde.</p><div><span class="tag">SOLO ZOMBIE SURVIVAL</span><span class="tag">TOUCH + KEYBOARD</span><span class="tag">FREE BROWSER DEMO</span></div><p>One facility. Two weapons. As many second thoughts as you need.</p><button id="play">Play the demo ↗</button><p id="status" role="status"></p><small>Best played in landscape. Initial download may take a moment.<br>Contains combat and zombie violence. <a href="../">Explore Civic Watch</a></small><small>© Civic Watch. Game content is provided for play; no asset reuse permission is granted.</small></article></main>
+<canvas id="canvas" tabindex="0" aria-label="Civic Watch zombie survival"></canvas>
+<button id="fullscreen" aria-label="Enter or exit fullscreen">Fullscreen</button><div id="hint">Rotate your phone sideways for more room to play.</div>
+<script src="game.js"></script>
+<script>
+const canvas=document.getElementById('canvas'), full=document.getElementById('fullscreen');
+const engine=new Engine({"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"game","experimentalVK":false,"fileSizes":{"game.pck":52643532,"game.wasm":39513091},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4});
+// CSS pixels keep high-DPI phones from rendering four or nine times the pixels.
+function resizeCanvas(){const ratio=Math.min(1,1280/innerWidth,720/innerHeight);canvas.width=Math.max(1,Math.round(innerWidth*ratio));canvas.height=Math.max(1,Math.round(innerHeight*ratio));}
+resizeCanvas();addEventListener('resize',resizeCanvas);
+async function fullscreen(){try{if(document.fullscreenElement)await document.exitFullscreen();else if(document.documentElement.requestFullscreen)await document.documentElement.requestFullscreen();if(screen.orientation?.lock)await screen.orientation.lock('landscape')}catch(e){}}
+document.getElementById('play').addEventListener('click',async()=>{
+ const button=document.getElementById('play'),status=document.getElementById('status');
+ const test=document.createElement('canvas');if(!test.getContext('webgl2')){status.textContent='WebGL 2 is required. Try an up-to-date Safari, Chrome, or Firefox browser.';return;}
+ button.disabled=true;button.textContent='Loading…';status.textContent='Downloading the demo…';
+ if(matchMedia('(pointer:coarse)').matches)fullscreen();
+ try{
+  await engine.startGame({canvas, canvasResizePolicy:0, onProgress:(current,total)=>{status.textContent=total?'Loading demo · '+Math.round(current/total*100)+'%':'Loading demo…';}});
+  canvas.style.display='block';full.style.display='block';document.getElementById('welcome').style.display='none';document.body.classList.add('playing');canvas.focus();
+ }catch(error){status.textContent='Could not start the demo. '+error.message+' Reload to try again.';button.textContent='Reload demo';button.disabled=false;button.onclick=()=>location.reload();}
+});
+full.addEventListener('click',fullscreen);
+document.addEventListener('fullscreenchange',()=>{full.textContent=document.fullscreenElement?'Exit fullscreen':'Fullscreen'});
+</script>
+</body></html>
+
