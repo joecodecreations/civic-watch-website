@@ -2145,3 +2145,102 @@ html:not(.js) .art-controls {
     border-radius: 6px;
   }
 }
+.arena-look {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+  display: flex;
+  border: 1px solid #d9b66e55;
+  background: #080f15c9;
+}
+.arena-look button {
+  border: 0;
+  background: transparent;
+  color: #abb5bb;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  padding: 10px 14px;
+  min-height: 36px;
+}
+.arena-look button[aria-pressed="true"] {
+  background: var(--gold);
+  color: var(--ink);
+}
+.zombie-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+}
+.zombie-section > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% 40%;
+  z-index: -2;
+}
+.zombie-section:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(0deg, #080f15 0%, #080f15d9 32%, transparent 68%),
+    linear-gradient(90deg, #080f15f2 0%, #080f15b3 38%, #080f1526 70%);
+  z-index: -1;
+}
+.zombie-copy {
+  max-width: 560px;
+  margin-bottom: 48px;
+}
+.zombie-copy .eyebrow {
+  font-size: 9px;
+  margin-bottom: 24px;
+}
+.zombie-copy h2 {
+  margin-bottom: 24px;
+}
+.zombie-copy p {
+  font-size: 16px;
+  color: #c3c8c6;
+}
+.mode-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.mode {
+  border: 1px solid var(--line);
+  background: #080f15d9;
+  padding: 22px;
+}
+.mode > .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.6px;
+}
+.mode h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 12px 0 10px;
+}
+.mode p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #c3c8c6;
+}
+@media (max-width: 980px) {
+  .mode-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .mode-grid {
+    grid-template-columns: 1fr;
+  }
+  .arena-look {
+    top: 12px;
+    right: 12px;
+  }
+}

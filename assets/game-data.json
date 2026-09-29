@@ -88,7 +88,7 @@
       "id": "neb",
       "name": "NEB",
       "role": "META GAMER, ZERO CARDIO",
-      "bio": "Competitive gamer trapped in a body that rage-quits cardio. Knows every meta, every exploit, every callout \u2014 standing up is an advanced slide cancel. Cheeto dust is camo and restock. Lethal: semtex, if he can reach the kitchen.",
+      "bio": "Competitive gamer trapped in a body that rage-quits cardio. Knows every meta, every exploit, every callout — standing up is an advanced slide cancel. Cheeto dust is camo and restock. Lethal: semtex, if he can reach the kitchen.",
       "bot": false
     },
     {
@@ -130,7 +130,7 @@
       "id": "lola",
       "name": "LOLA",
       "role": "NO-INDOOR-VOICE FLIRT TANK",
-      "bio": "Loud glamorous Colombian-American operator. Giant hoops, gym confidence, no indoor voice. Thick, athletic, irresistible \u2014 an insult doesn't count unless it becomes flirting. Slide-cancels into the argument. Lethal: words.",
+      "bio": "Loud glamorous Colombian-American operator. Giant hoops, gym confidence, no indoor voice. Thick, athletic, irresistible — an insult doesn't count unless it becomes flirting. Slide-cancels into the argument. Lethal: words.",
       "bot": false
     },
     {
@@ -165,7 +165,7 @@
       "id": "priya",
       "name": "PRIYA",
       "role": "YOGA-CLOTHES ROAD-RAGE MONK",
-      "bio": "Full-time yoga-clothes operator, part-time yoga. Mindfulness, hydration, protecting her peace \u2014 and screaming at anyone who merges without a blinker. Dead Silence until traffic. Then it's a cruise missile.",
+      "bio": "Full-time yoga-clothes operator, part-time yoga. Mindfulness, hydration, protecting her peace — and screaming at anyone who merges without a blinker. Dead Silence until traffic. Then it's a cruise missile.",
       "bot": false
     },
     {
@@ -227,27 +227,27 @@
     {
       "id": "dam",
       "title": "Hydro Dam",
-      "blurb": "Watchtowers on the dam crest, a service gallery and canyon water."
+      "blurb": "A crest road over a mountain reservoir, intake towers and a gate house; stairs down to turbine halls and a tailrace deck above the river."
     },
     {
       "id": "archives",
       "title": "Archives",
-      "blurb": "Government offices, dense book stacks and connected reading halls."
+      "blurb": "A 1936 State Archives on a civic plaza: library lions, a scholar fountain, a galleried reading room, records stacks and windows that shatter."
     },
     {
       "id": "complex",
       "title": "Industrial Complex",
-      "blurb": "Interlocking red and blue wings with a raised central crosswalk."
+      "blurb": "Warren Works: a sawtooth-roofed assembly hall with catwalks and a glass control office, red and blue wings, loading docks, a rail yard, tank farm and canal."
     },
     {
       "id": "temple",
       "title": "Stone Temple",
-      "blurb": "Monumental stone pillars, a raised altar and looping crypt galleries."
+      "blurb": "A jungle temple above a river gorge: an open sun court and gallery walk, a hall of columns, a shrine, a ruined wing and a waterfall."
     },
     {
       "id": "streets",
       "title": "Night Streets",
-      "blurb": "Moonlit stone facades, open interiors and broad Eastern European streets."
+      "blurb": "A rain-wet city block on a canal: a lion-guarded column square, a stalled tram, a cafe, bank, arcade and bar behind plate glass, alleys with fire escapes to two rooftops, and a humped bridge."
     },
     {
       "id": "bunker",
@@ -257,7 +257,7 @@
     {
       "id": "silo",
       "title": "Missile Silo",
-      "blurb": "A towering rocket, fuel laboratories and a climbable gantry circuit."
+      "blurb": "A launch complex in the mountains: blast doors cracked open over a live missile, catwalk rings down the shaft, a control room glazed into it, and a fenced compound above a lakeside yard."
     },
     {
       "id": "yacht",
@@ -275,25 +275,96 @@
       "blurb": "A golden-hour suburb: two streets, back-to-back backyards, ten enterable homes and windows that shatter."
     },
     {
+      "id": "hospital",
+      "title": "Fairview General",
+      "blurb": "Three civic-hospital floors: underground parking and morgue, an emergency lobby, and an infected patient wing."
+    },
+    {
+      "id": "cemetery",
+      "title": "Fairview Cemetery",
+      "blurb": "Moonlit graves, drifting clouds, mossy epitaphs and rusted iron beneath towering old beeches."
+    },
+    {
+      "id": "station",
+      "title": "Last Chance Gas",
+      "blurb": "The last pumps for 86 miles: a canopy forecourt, a glass-front mini-mart, the Suds & Duds laundromat with an apartment upstairs, a drive-through car wash and a creek culvert under the mountain road."
+    },
+    {
       "id": "range",
       "title": "Gun Range",
-      "blurb": "Four indoor lanes with motorized target carriers, every weapon racked on the armory wall, and a walled desert range of steel knockdowns outside."
+      "blurb": "Four indoor lanes with motorized target carriers, every weapon racked on the armory wall, steel knockdowns outside, and an expanded clay field with low, medium, high and roller targets."
     }
   ],
   "weapons": [
-    ["kestrel", "Kestrel", "Pistol"],
-    ["magnum", "Magnum", "Revolver"],
-    ["ripper", "Ripper", "SMG"],
-    ["kf47", "KF-47", "Rifle"],
-    ["storm90", "Storm 90", "SMG"],
-    ["sentinel", "Sentinel", "Sniper"],
-    ["thunder", "Thunder", "Shotgun"],
-    ["nightshade", "Nightshade", "Suppressed"],
-    ["atlas", "Atlas", "Rocket launcher"],
-    ["ak47", "AK-47", "Rifle"],
-    ["m249", "M249 SAW", "Machine gun"],
-    ["scar16", "FN SCAR 16S", "Rifle"],
-    ["badger", "Badger", "Rifle"],
-    ["mp5", "MP5", "SMG"]
+    [
+      "kestrel",
+      "Kestrel 9",
+      "Pistol"
+    ],
+    [
+      "magnum",
+      "Auric Magnum",
+      "Revolver"
+    ],
+    [
+      "ripper",
+      "Ripper SMG",
+      "SMG"
+    ],
+    [
+      "kf47",
+      "M16",
+      "Rifle"
+    ],
+    [
+      "storm90",
+      "Storm 90",
+      "SMG"
+    ],
+    [
+      "sentinel",
+      "Sentinel",
+      "Sniper"
+    ],
+    [
+      "thunder",
+      "Thunder 12",
+      "Shotgun"
+    ],
+    [
+      "nightshade",
+      "Nightshade",
+      "Suppressed"
+    ],
+    [
+      "atlas",
+      "Atlas M72",
+      "Rocket launcher"
+    ],
+    [
+      "ak47",
+      "Timber 47",
+      "Rifle"
+    ],
+    [
+      "m249",
+      "Hedgecutter",
+      "Light machine gun"
+    ],
+    [
+      "scar16",
+      "Sandpiper",
+      "Rifle"
+    ],
+    [
+      "badger",
+      "Badger",
+      "Rifle"
+    ],
+    [
+      "mp5",
+      "Picket 9",
+      "SMG"
+    ]
   ]
 }

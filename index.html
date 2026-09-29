@@ -8,7 +8,7 @@
     <title>Civic Watch — Remain Calm. Report Everything.</title>
     <meta
       name="description"
-      content="A small town. A federal grant. A heavily armed neighborhood watch. Meet the locals, explore 11 arenas, and join the Civic Watch FPS beta for iPhone and iPad."
+      content="A small town. A federal grant. A heavily armed neighborhood watch. Meet the locals, explore 14 arenas, survive the zombie waves, and join the Civic Watch FPS beta for iPhone and iPad."
     />
     <link rel="canonical" href="https://civicwatchgame.com/" />
     <link rel="icon" href="icon.png" />
@@ -22,7 +22,7 @@
     />
     <meta
       property="og:description"
-      content="A small town. A federal grant. A heavily armed neighborhood watch. Meet the locals, explore 11 arenas, and join the Civic Watch FPS beta for iPhone and iPad."
+      content="A small town. A federal grant. A heavily armed neighborhood watch. Meet the locals, explore 14 arenas, survive the zombie waves, and join the Civic Watch FPS beta for iPhone and iPad."
     />
     <meta property="og:url" content="https://civicwatchgame.com/" />
     <meta
@@ -59,7 +59,7 @@
         </button>
         <nav id="navigation" aria-label="Main navigation">
           <a href="./#game">The game</a><a href="./#characters">The locals</a
-          ><a href="./#arenas">Arenas</a><a href="story.html">The story</a
+          ><a href="./#arenas">Arenas</a><a href="./#zombies">Zombies</a><a href="story.html">The story</a
           ><a href="./#controls">Controls</a><a href="./#gallery">Gallery</a
           ><a class="button small" href="./#join"
             >JOIN THE WATCH <span>↗</span></a
@@ -164,7 +164,7 @@
         </div>
         <div class="stats reveal">
           <div><strong>29</strong><span>SELECTABLE LOCALS</span></div>
-          <div><strong>11</strong><span>DEATHMATCH ARENAS</span></div>
+          <div><strong>14</strong><span>ARENAS. SOME HAUNTED.</span></div>
           <div><strong>14</strong><span>WEAPONS. MANY GRUDGES.</span></div>
           <div><strong>01</strong><span>VERY BAD IDEA</span></div>
         </div>
@@ -175,16 +175,18 @@
             <h3>Practice being a problem.</h3>
             <p>
               Set the arena, bot count, difficulty and frag limit. Sharpen your
-              aim against up to ten AI opponents. No account required.
+              aim against up to eight AI opponents on iPhone and iPad. No account
+              required.
             </p>
           </article>
           <article class="feature reveal">
             <span class="feature-icon" aria-hidden="true">⚑</span
-            ><span class="eyebrow">ONLINE FREE-FOR-ALL</span>
+            ><span class="eyebrow">ONLINE WITH FRIENDS</span>
             <h3>Bring the group chat.</h3>
             <p>
-              Host a lobby or join with a party code. Compete online, or find
-              nearby games on the same Wi-Fi. Settle it on the scoreboard.
+              Host a lobby or join with a party code: free-for-all, zombie
+              co-op, team battles, infection or a gun range meetup. Find nearby
+              games on the same Wi-Fi. Settle it on the scoreboard.
             </p>
           </article>
           <article class="feature reveal">
@@ -1004,9 +1006,10 @@
               <h2>TAKE IT<br /><span>OUTSIDE. OR INSIDE.</span></h2>
             </div>
             <p>
-              Eleven original arenas, from Fairview’s backyards to bunker
-              corridors and a yacht in Miami. Learn the routes. Watch the
-              windows.
+              Fourteen original arenas, from Fairview’s backyards and cemetery
+              to a hospital morgue, a gas station at the end of the road and a
+              yacht in Miami. Every one of them goes dark for Zombies. Learn the
+              routes. Watch the windows.
             </p>
           </div>
           <div class="arena-layout">
@@ -1018,86 +1021,90 @@
                 data-title="Maple Court"
                 data-blurb="A golden-hour suburb: two streets, back-to-back backyards, ten enterable homes and windows that shatter."
               >
-                <span>01</span>Maple Court<b aria-hidden="true">↗</b></button
-              ><button
+                <span>01</span>Maple Court<b aria-hidden="true">↗</b>
+              </button>
+              <button
                 class="arena-choice"
                 aria-pressed="false"
                 data-map="facility"
                 data-title="Research Facility"
                 data-blurb="Tiled washrooms, laboratories, six processing tanks and a loading bay."
               >
-                <span>02</span>Research Facility<b aria-hidden="true"
-                  >↗</b
-                ></button
-              ><button
+                <span>02</span>Research Facility<b aria-hidden="true">↗</b>
+              </button>
+              <button
                 class="arena-choice"
                 aria-pressed="false"
                 data-map="dam"
                 data-title="Hydro Dam"
-                data-blurb="Watchtowers on the dam crest, a service gallery and canyon water."
+                data-blurb="A crest road over a mountain reservoir, intake towers and a gate house; stairs down to turbine halls and a tailrace deck above the river."
               >
-                <span>03</span>Hydro Dam<b aria-hidden="true">↗</b></button
-              ><button
+                <span>03</span>Hydro Dam<b aria-hidden="true">↗</b>
+              </button>
+              <button
                 class="arena-choice"
                 aria-pressed="false"
                 data-map="archives"
                 data-title="Archives"
-                data-blurb="Government offices, dense book stacks and connected reading halls."
+                data-blurb="A 1936 State Archives on a civic plaza: library lions, a scholar fountain, a galleried reading room, records stacks and windows that shatter."
               >
-                <span>04</span>Archives<b aria-hidden="true">↗</b></button
-              ><button
+                <span>04</span>Archives<b aria-hidden="true">↗</b>
+              </button>
+              <button
                 class="arena-choice"
                 aria-pressed="false"
                 data-map="complex"
                 data-title="Industrial Complex"
-                data-blurb="Interlocking red and blue wings with a raised central crosswalk."
+                data-blurb="Warren Works: a sawtooth-roofed assembly hall with catwalks and a glass control office, red and blue wings, loading docks, a rail yard, tank farm and canal."
               >
-                <span>05</span>Industrial Complex<b aria-hidden="true"
-                  >↗</b
-                ></button
-              ><button
+                <span>05</span>Industrial Complex<b aria-hidden="true">↗</b>
+              </button>
+              <button
                 class="arena-choice"
                 aria-pressed="false"
                 data-map="temple"
                 data-title="Stone Temple"
-                data-blurb="Monumental stone pillars, a raised altar and looping crypt galleries."
+                data-blurb="A jungle temple above a river gorge: an open sun court and gallery walk, a hall of columns, a shrine, a ruined wing and a waterfall."
               >
-                <span>06</span>Stone Temple<b aria-hidden="true">↗</b></button
-              ><button
+                <span>06</span>Stone Temple<b aria-hidden="true">↗</b>
+              </button>
+              <button
                 class="arena-choice"
                 aria-pressed="false"
                 data-map="streets"
                 data-title="Night Streets"
-                data-blurb="Moonlit stone facades, open interiors and broad Eastern European streets."
+                data-blurb="A rain-wet city block on a canal: a lion-guarded column square, a stalled tram, a cafe, bank, arcade and bar behind plate glass, alleys with fire escapes to two rooftops, and a humped bridge."
               >
-                <span>07</span>Night Streets<b aria-hidden="true">↗</b></button
-              ><button
+                <span>07</span>Night Streets<b aria-hidden="true">↗</b>
+              </button>
+              <button
                 class="arena-choice"
                 aria-pressed="false"
                 data-map="bunker"
                 data-title="Command Bunker"
                 data-blurb="Satellite control screens, holding cells, armory and blast corridors."
               >
-                <span>08</span>Command Bunker<b aria-hidden="true"
-                  >↗</b
-                ></button
-              ><button
+                <span>08</span>Command Bunker<b aria-hidden="true">↗</b>
+              </button>
+              <button
                 class="arena-choice"
                 aria-pressed="false"
                 data-map="silo"
                 data-title="Missile Silo"
-                data-blurb="A towering rocket, fuel laboratories and a climbable gantry circuit."
+                data-blurb="A launch complex in the mountains: blast doors cracked open over a live missile, catwalk rings down the shaft, a control room glazed into it, and a fenced compound above a lakeside yard."
               >
-                <span>09</span>Missile Silo<b aria-hidden="true">↗</b></button
-              ><button
+                <span>09</span>Missile Silo<b aria-hidden="true">↗</b>
+              </button>
+              <button
                 class="arena-choice"
                 aria-pressed="false"
                 data-map="yacht"
                 data-title="Miami Yacht"
                 data-blurb="Aurora VII tied to a Biscayne marina, teak decks, cabins and the Miami skyline."
               >
-                <span>10</span>Miami Yacht<b aria-hidden="true">↗</b></button
-              ><button
+                <span>10</span>Miami Yacht<b aria-hidden="true">↗</b>
+              </button>
+              <button
                 class="arena-choice"
                 aria-pressed="false"
                 data-map="market"
@@ -1106,8 +1113,39 @@
               >
                 <span>11</span>Mega Mart<b aria-hidden="true">↗</b>
               </button>
+              <button
+                class="arena-choice"
+                aria-pressed="false"
+                data-map="hospital"
+                data-title="Fairview General"
+                data-blurb="Three civic-hospital floors: underground parking and morgue, an emergency lobby, and an infected patient wing."
+              >
+                <span>12</span>Fairview General<b aria-hidden="true">↗</b>
+              </button>
+              <button
+                class="arena-choice"
+                aria-pressed="false"
+                data-map="cemetery"
+                data-title="Fairview Cemetery"
+                data-blurb="Moonlit graves, drifting clouds, mossy epitaphs and rusted iron beneath towering old beeches."
+              >
+                <span>13</span>Fairview Cemetery<b aria-hidden="true">↗</b>
+              </button>
+              <button
+                class="arena-choice"
+                aria-pressed="false"
+                data-map="station"
+                data-title="Last Chance Gas"
+                data-blurb="The last pumps for 86 miles: a canopy forecourt, a glass-front mini-mart, the Suds &amp; Duds laundromat with an apartment upstairs, a drive-through car wash and a creek culvert under the mountain road."
+              >
+                <span>14</span>Last Chance Gas<b aria-hidden="true">↗</b>
+              </button>
             </div>
             <figure class="arena-preview">
+              <div class="arena-look" role="group" aria-label="Arena lighting">
+                <button aria-pressed="true" data-look="combat">BOT MATCH</button
+                ><button aria-pressed="false" data-look="undead">ZOMBIES</button>
+              </div>
               <img
                 id="arena-image"
                 src="assets/maps/neighborhood.webp"
@@ -1117,7 +1155,7 @@
                 loading="lazy"
               />
               <figcaption>
-                <span class="eyebrow">IN-GAME ARENA PREVIEW</span>
+                <span class="eyebrow" id="arena-kind">IN-GAME ARENA PREVIEW</span>
                 <h3 id="arena-title">MAPLE COURT</h3>
                 <p id="arena-description">
                   A golden-hour suburb: two streets, back-to-back backyards, ten
@@ -1131,25 +1169,82 @@
             <div>
               <h3>WARM UP AT THE GUN RANGE.</h3>
               <p>
-                Indoor lanes, moving target carriers, an armory wall, and
-                outdoor steel knockdowns. All the practice. None of the
-                neighbors.
+                Indoor lanes with moving target carriers, every weapon racked on
+                the armory wall, outdoor steel knockdowns and a clay field with
+                scored skeet rounds. Host it online as a range event. All the
+                practice. None of the neighbors.
               </p>
             </div>
             <span class="eyebrow">OFFLINE TRAINING</span>
           </div>
         </div>
       </section>
+      <section class="zombie-section" id="zombies">
+        <img
+          src="assets/zombies/maple_court_pearl.webp"
+          alt="Pearl hands a casserole across a Maple Court porch rail while the undead close in at dusk"
+          width="1600"
+          height="900"
+          loading="lazy"
+        />
+        <div class="wrap section">
+          <div class="zombie-copy reveal">
+            <span class="eyebrow">04 / AFTER DARK</span>
+            <h2>THE HOA<br />SAID <span>NO ZOMBIES.</span></h2>
+            <p>
+              The power is out, the streetlights are dead and the neighbors are
+              not coming back normal. Every arena turns to night for Zombies:
+              endless waves, headshots that count and a two-handed axe for when
+              the magazine runs dry.
+            </p>
+          </div>
+          <div class="mode-grid">
+            <article class="mode reveal">
+              <span class="eyebrow">SOLO · OFFLINE</span>
+              <h3>Zombies</h3>
+              <p>
+                Survive escalating waves of undead operatives. Headshots kill.
+                Call in supplies when it gets ugly.
+              </p>
+            </article>
+            <article class="mode reveal">
+              <span class="eyebrow">ONLINE · CO-OP</span>
+              <h3>Zombie Co-op</h3>
+              <p>
+                Fight the waves together. No friendly fire. Fallen teammates
+                return when a wave clears; a squad wipe ends the run.
+              </p>
+            </article>
+            <article class="mode reveal">
+              <span class="eyebrow">ONLINE · BLUE VS RED</span>
+              <h3>Zombie Team Battle</h3>
+              <p>
+                Two balanced teams fight each other and the waves. Enemy player:
+                5 points. Zombie: 1 point.
+              </p>
+            </article>
+            <article class="mode reveal">
+              <span class="eyebrow">ONLINE · HUMANS VS INFECTED</span>
+              <h3>Infection</h3>
+              <p>
+                One in four starts infected. Humans who die turn. Humans win by
+                surviving the timer.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
       <section class="wrap section" id="arsenal">
         <div class="section-heading reveal">
           <div>
-            <span class="eyebrow">04 / GOVERNMENT-ISSUED OVERREACTION</span>
+            <span class="eyebrow">05 / GOVERNMENT-ISSUED OVERREACTION</span>
             <h2>WELL EQUIPPED.<br /><span>POORLY SUPERVISED.</span></h2>
           </div>
           <p>
-            Fourteen weapons with distinct recoil, handling and reloads. Real
-            optics, a quick combat knife, and frag, smoke and flash grenades.
-            The budget was apparently unlimited.
+            Fourteen firearms with distinct recoil, handling and reloads. Red
+            dot, holo and rifle scopes, a combat knife or a two-handed axe, and
+            frag, smoke and flash grenades. The budget was apparently
+            unlimited.
           </p>
         </div>
         <div class="weapon-grid">
@@ -1157,45 +1252,45 @@
             <span class="eyebrow">Pistol</span
             ><img
               src="assets/weapons/kestrel.webp"
-              alt="Kestrel weapon preview from the game"
+              alt="Kestrel 9 weapon preview from the game"
               width="640"
               height="360"
               loading="lazy"
             />
-            <h3>Kestrel</h3>
+            <h3>Kestrel 9</h3>
           </article>
           <article class="weapon">
             <span class="eyebrow">Revolver</span
             ><img
               src="assets/weapons/magnum.webp"
-              alt="Magnum weapon preview from the game"
+              alt="Auric Magnum weapon preview from the game"
               width="640"
               height="360"
               loading="lazy"
             />
-            <h3>Magnum</h3>
+            <h3>Auric Magnum</h3>
           </article>
           <article class="weapon">
             <span class="eyebrow">SMG</span
             ><img
               src="assets/weapons/ripper.webp"
-              alt="Ripper weapon preview from the game"
+              alt="Ripper SMG weapon preview from the game"
               width="640"
               height="360"
               loading="lazy"
             />
-            <h3>Ripper</h3>
+            <h3>Ripper SMG</h3>
           </article>
           <article class="weapon">
             <span class="eyebrow">Rifle</span
             ><img
               src="assets/weapons/kf47.webp"
-              alt="KF-47 weapon preview from the game"
+              alt="M16 weapon preview from the game"
               width="640"
               height="360"
               loading="lazy"
             />
-            <h3>KF-47</h3>
+            <h3>M16</h3>
           </article>
           <article class="weapon">
             <span class="eyebrow">SMG</span
@@ -1223,12 +1318,12 @@
             <span class="eyebrow">Shotgun</span
             ><img
               src="assets/weapons/thunder.webp"
-              alt="Thunder weapon preview from the game"
+              alt="Thunder 12 weapon preview from the game"
               width="640"
               height="360"
               loading="lazy"
             />
-            <h3>Thunder</h3>
+            <h3>Thunder 12</h3>
           </article>
           <article class="weapon">
             <span class="eyebrow">Suppressed</span
@@ -1245,45 +1340,45 @@
             <span class="eyebrow">Rocket launcher</span
             ><img
               src="assets/weapons/atlas.webp"
-              alt="Atlas weapon preview from the game"
+              alt="Atlas M72 weapon preview from the game"
               width="640"
               height="360"
               loading="lazy"
             />
-            <h3>Atlas</h3>
+            <h3>Atlas M72</h3>
           </article>
           <article class="weapon">
             <span class="eyebrow">Rifle</span
             ><img
               src="assets/weapons/ak47.webp"
-              alt="AK-47 weapon preview from the game"
+              alt="Timber 47 weapon preview from the game"
               width="640"
               height="360"
               loading="lazy"
             />
-            <h3>AK-47</h3>
+            <h3>Timber 47</h3>
           </article>
           <article class="weapon">
-            <span class="eyebrow">Machine gun</span
+            <span class="eyebrow">Light machine gun</span
             ><img
               src="assets/weapons/m249.webp"
-              alt="M249 SAW weapon preview from the game"
+              alt="Hedgecutter weapon preview from the game"
               width="640"
               height="360"
               loading="lazy"
             />
-            <h3>M249 SAW</h3>
+            <h3>Hedgecutter</h3>
           </article>
           <article class="weapon">
             <span class="eyebrow">Rifle</span
             ><img
               src="assets/weapons/scar16.webp"
-              alt="FN SCAR 16S weapon preview from the game"
+              alt="Sandpiper weapon preview from the game"
               width="640"
               height="360"
               loading="lazy"
             />
-            <h3>FN SCAR 16S</h3>
+            <h3>Sandpiper</h3>
           </article>
           <article class="weapon">
             <span class="eyebrow">Rifle</span
@@ -1300,19 +1395,19 @@
             <span class="eyebrow">SMG</span
             ><img
               src="assets/weapons/mp5.webp"
-              alt="MP5 weapon preview from the game"
+              alt="Picket 9 weapon preview from the game"
               width="640"
               height="360"
               loading="lazy"
             />
-            <h3>MP5</h3>
+            <h3>Picket 9</h3>
           </article>
         </div>
         <div class="arsenal-note">
           <span class="eyebrow">MAKE IT YOURS</span>
           <p>
-            Start with the factory finish. Optional gun finishes and extra
-            operatives are available in the game. No loot boxes. No third-party
+            Start with the factory finish. Optional gun finishes, extra
+            operatives and Zombies supplies are available in the game. No loot boxes. No third-party
             ads.
           </p>
         </div>
@@ -1320,7 +1415,7 @@
       <section class="wrap section" id="controls">
         <div class="section-heading reveal">
           <div>
-            <span class="eyebrow">05 / FIELD MANUAL</span>
+            <span class="eyebrow">06 / FIELD MANUAL</span>
             <h2>CONTROLS</h2>
           </div>
           <p>
@@ -1337,7 +1432,7 @@
             data-lightbox
             ><img
               src="assets/controls/xbox-front.webp"
-              alt="Xbox controller face mapped to Civic Watch: left stick move and L3 sprint, right stick look and R3 crouch, A jump, B emote, X reload or use, Y next gun, LB grenade, RB knife, View scoreboard, Menu pause, d-pad up grenade type, left flashlight, down night vision, right laser."
+              alt="Xbox controller face mapped to Civic Watch: left stick move and L3 sprint, right stick look and R3 crouch, A jump, B emote, X reload or use, Y next gun, LB grenade, RB melee, View scoreboard, Menu pause, d-pad up grenade type, left flashlight, down night vision, right laser."
               width="1298"
               height="735"
               loading="lazy"
@@ -1367,7 +1462,7 @@
         <div class="wrap section">
           <div class="section-heading reveal">
             <div>
-              <span class="eyebrow">06 / EVIDENCE LOCKER</span>
+              <span class="eyebrow">07 / EVIDENCE LOCKER</span>
               <h2>POSTCARDS FROM<br /><span>THE NEW NORMAL.</span></h2>
             </div>
             <p>
@@ -1493,9 +1588,9 @@
           <details>
             <summary>Can I play without an internet connection?</summary>
             <p>
-              Yes. Bot deathmatch and the gun range work offline. Online
-              free-for-all, TestFlight installation, purchases and Apple
-              services require an internet connection.
+              Yes. Bot deathmatch, solo Zombies and the gun range work
+              offline. Online matches, TestFlight installation, purchases and
+              Apple services require an internet connection.
             </p>
           </details>
           <details>
@@ -1521,8 +1616,9 @@
             <summary>Is this a story campaign?</summary>
             <p>
               Fairview’s backstory sets the stage for arena deathmatch. The game
-              offers offline bot matches, online free-for-all and a practice
-              range; this site is not announcing a story campaign.
+              offers offline bot matches, endless Zombies waves, online
+              free-for-all, zombie co-op, team battle and infection, and a
+              practice range; this site is not announcing a story campaign.
             </p>
           </details>
           <details>

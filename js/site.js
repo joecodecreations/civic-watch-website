@@ -244,19 +244,40 @@
     );
     $("#dossier-join").addEventListener("click", () => $("#dossier").close());
   }
+  let arenaLook = "combat";
+  const showArena = () => {
+    const button = $('[data-map][aria-pressed="true"]');
+    if (!button) return;
+    const undead = arenaLook === "undead";
+    $("#arena-image").src =
+      `assets/maps/${button.dataset.map}${undead ? "_undead" : ""}.webp`;
+    $("#arena-image").alt =
+      `${button.dataset.title} in-game arena preview${undead ? ", Zombies lighting" : ""}`;
+    $("#arena-kind").textContent = undead
+      ? "IN-GAME ARENA PREVIEW / ZOMBIES"
+      : "IN-GAME ARENA PREVIEW";
+    $("#arena-title").textContent = button.dataset.title;
+    $("#arena-description").textContent = button.dataset.blurb;
+    if (!reduced.matches)
+      $(".arena-preview").animate([{ opacity: 0.4 }, { opacity: 1 }], {
+        duration: 300,
+      });
+  };
   $$("[data-map]").forEach((button) =>
     button.addEventListener("click", () => {
       $$("[data-map]").forEach((b) =>
         b.setAttribute("aria-pressed", String(b === button)),
       );
-      $("#arena-image").src = `assets/maps/${button.dataset.map}.webp`;
-      $("#arena-image").alt = `${button.dataset.title} in-game arena preview`;
-      $("#arena-title").textContent = button.dataset.title;
-      $("#arena-description").textContent = button.dataset.blurb;
-      if (!reduced.matches)
-        $(".arena-preview").animate([{ opacity: 0.4 }, { opacity: 1 }], {
-          duration: 300,
-        });
+      showArena();
+    }),
+  );
+  $$("[data-look]").forEach((button) =>
+    button.addEventListener("click", () => {
+      arenaLook = button.dataset.look;
+      $$("[data-look]").forEach((b) =>
+        b.setAttribute("aria-pressed", String(b === button)),
+      );
+      showArena();
     }),
   );
   $$("[data-lightbox]").forEach((link) =>

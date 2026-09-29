@@ -39,9 +39,9 @@ for css in (ROOT/'css').glob('*.css'):
     for ref in re.findall(r'url\([\'"]?([^\)\'" ]+)', css.read_text()):
         if not urlsplit(ref).scheme and not (css.parent/ref).exists(): errors.append(f'{css.name}: missing {ref}')
 main = docs[ROOT/'index.html']
-for actual, expected, label in [(main.cards,31,'dossiers'), (main.arenas,11,'arenas'), (main.weapons,14,'weapons')]:
+for actual, expected, label in [(main.cards,31,'dossiers'), (main.arenas,14,'arenas'), (main.weapons,14,'weapons')]:
     if actual != expected: errors.append(f'Expected {expected} {label}, found {actual}')
 if (ROOT/'CNAME').read_text().strip() != 'civicwatchgame.com': errors.append('Incorrect CNAME')
 if errors:
     print('\n'.join(errors)); sys.exit(1)
-print(f'PASS: {len(docs)} pages, local links/anchors, image and font references, 31 dossiers, 11 arenas, 14 weapons, CNAME.')
+print(f'PASS: {len(docs)} pages, local links/anchors, image and font references, 31 dossiers, 14 arenas, 14 weapons, CNAME.')
