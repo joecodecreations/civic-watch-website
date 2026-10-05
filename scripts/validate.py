@@ -42,6 +42,11 @@ main = docs[ROOT/'index.html']
 for actual, expected, label in [(main.cards,31,'dossiers'), (main.arenas,14,'arenas'), (main.weapons,14,'weapons')]:
     if actual != expected: errors.append(f'Expected {expected} {label}, found {actual}')
 if (ROOT/'CNAME').read_text().strip() != 'civicwatchgame.com': errors.append('Incorrect CNAME')
+TAG = 'G-5CKV6VD9KM'
+for path in list(ROOT.glob('*.html')) + list((ROOT/'play').glob('*.html')):
+    text = path.read_text()
+    if f'googletagmanager.com/gtag/js?id={TAG}' not in text or f"gtag('config', '{TAG}')" not in text:
+        errors.append(f'{path.relative_to(ROOT)}: missing Google tag {TAG}')
 if errors:
     print('\n'.join(errors)); sys.exit(1)
 print(f'PASS: {len(docs)} pages, local links/anchors, image and font references, 31 dossiers, 14 arenas, 14 weapons, CNAME.')

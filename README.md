@@ -49,3 +49,7 @@ After GitHub Pages has `civicwatchgame.com` saved as its custom domain, open Nam
 Reference: [GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 
 The website needs no server, database, subscription or API key. Do not copy the private game checkout into this public repository.
+
+## Analytics
+
+Every public page, including the playable demo, loads Google tag `G-5CKV6VD9KM` at the start of `<head>`. The demo pages also allow `https://www.googletagmanager.com` and the Google Analytics collection hosts in their content-security policy so the tag can send page views. `scripts/validate.py` fails if a page drops the tag. The privacy policy discloses the measurement.
