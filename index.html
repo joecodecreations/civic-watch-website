@@ -17,7 +17,7 @@
     <title>Civic Watch — Remain Calm. Report Everything.</title>
     <meta
       name="description"
-      content="A small town. A federal grant. A heavily armed neighborhood watch. Meet the locals, explore 14 arenas, survive the zombie waves, and join the Civic Watch FPS beta for iPhone and iPad."
+      content="A small town. A federal grant. A heavily armed neighborhood watch. Meet the locals, explore 14 arenas, survive the Infestation, and join the Civic Watch FPS beta for iPhone and iPad."
     />
     <link rel="canonical" href="https://civicwatchgame.com/" />
     <link rel="icon" href="icon.png" />
@@ -31,7 +31,7 @@
     />
     <meta
       property="og:description"
-      content="A small town. A federal grant. A heavily armed neighborhood watch. Meet the locals, explore 14 arenas, survive the zombie waves, and join the Civic Watch FPS beta for iPhone and iPad."
+      content="A small town. A federal grant. A heavily armed neighborhood watch. Meet the locals, explore 14 arenas, survive the Infestation, and join the Civic Watch FPS beta for iPhone and iPad."
     />
     <meta property="og:url" content="https://civicwatchgame.com/" />
     <meta
@@ -40,8 +40,7 @@
     />
     <meta name="twitter:card" content="summary_large_image" />
     <script src="js/site.js" defer></script>
-  <link rel="stylesheet" href="css/demo.css">
-    <script src="js/demo.js" defer></script>
+    <link rel="stylesheet" href="css/trailer.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -67,8 +66,8 @@
           MENU <span>☰</span>
         </button>
         <nav id="navigation" aria-label="Main navigation">
-          <a href="./#game">The game</a><a href="./#characters">The locals</a
-          ><a href="./#arenas">Arenas</a><a href="./#zombies">Zombies</a><a href="story.html">The story</a
+          <a href="./#trailer">Trailer</a><a href="./#game">The game</a><a href="./#characters">The locals</a
+          ><a href="./#arenas">Arenas</a><a href="./#infestation">Infestation</a><a href="story.html">The story</a
           ><a href="./#controls">Controls</a><a href="./#gallery">Gallery</a
           ><a class="button small" href="./#join"
             >JOIN THE WATCH <span>↗</span></a
@@ -107,7 +106,7 @@
               have a few things to get off their chest.
             </p>
             <div class="cta-row">
-              <a class="button" href="#play">PLAY THE DEMO <span>↓</span></a
+              <a class="button" href="#infestation">SEE THE INFESTATION <span>↓</span></a
               ><a class="text-link" href="#game"
                 ><span class="play-icon" aria-hidden="true">↓</span> GET THE
                 BRIEFING</a
@@ -149,14 +148,32 @@
           <span aria-hidden="true">✦</span>
         </div>
       </div>
-      <section id="play" class="wrap browser-demo" aria-labelledby="demo-title">
-        <p class="eyebrow">FIELD TEST / RESEARCH FACILITY</p>
-        <h2 id="demo-title">THE NIGHT SHIFT BITES BACK.</h2>
-        <p>Play as Rook in a bite-sized zombie survival demo. One facility, two guns, and a very bad night.</p>
-        <div class="demo-stage" id="demo-stage">
-          <div class="demo-cover" id="demo-cover"><p>Keyboard and mouse or mobile touch controls.<br>Play in landscape for more room.</p><button class="button" id="load-demo">LOAD BROWSER DEMO ↗</button><p>Downloads only when you play. Contains combat and zombie violence.</p></div>
+      <section id="trailer" class="wrap trailer-section" aria-labelledby="trailer-title">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">OFFICIAL TRAILER / REAL GAMEPLAY</span>
+            <h2 id="trailer-title">CAUGHT ON<br /><span>DOORBELL CAM.</span></h2>
+          </div>
+          <p>
+            Thirty seconds of real gameplay: deathmatch across 14 arenas, 29
+            operatives to choose from, Infestation after dark and the Daily
+            Supply Drop.
+          </p>
         </div>
-        <div class="demo-actions"><button class="button small" id="stop-demo" hidden>STOP DEMO</button><a class="text-link" href="play/" target="_blank" rel="noopener">Open full-window game ↗</a></div>
+        <div class="trailer-stage">
+          <video
+            controls
+            playsinline
+            preload="none"
+            poster="assets/trailer/trailer-poster.webp"
+            width="1920"
+            height="886"
+            aria-label="Civic Watch gameplay trailer"
+          >
+            <source src="assets/trailer/civic-watch-trailer.mp4" type="video/mp4" />
+            <a href="assets/trailer/civic-watch-trailer.mp4">Watch the Civic Watch trailer (MP4)</a>
+          </video>
+        </div>
       </section>
       <section class="wrap section" id="game">
         <div class="section-heading reveal">
@@ -193,7 +210,7 @@
             ><span class="eyebrow">ONLINE WITH FRIENDS</span>
             <h3>Bring the group chat.</h3>
             <p>
-              Host a lobby or join with a party code: free-for-all, zombie
+              Host a lobby or join with a party code: free-for-all, Infestation
               co-op, team battles, infection or a gun range meetup. Find nearby
               games on the same Wi-Fi. Settle it on the scoreboard.
             </p>
@@ -1017,8 +1034,8 @@
             <p>
               Fourteen original arenas, from Fairview’s backyards and cemetery
               to a hospital morgue, a gas station at the end of the road and a
-              yacht in Miami. Every one of them goes dark for Zombies. Learn the
-              routes. Watch the windows.
+              yacht in Miami. Every one of them can go dark for Infestation. Learn
+              the routes. Watch the windows.
             </p>
           </div>
           <div class="arena-layout">
@@ -1153,7 +1170,7 @@
             <figure class="arena-preview">
               <div class="arena-look" role="group" aria-label="Arena lighting">
                 <button aria-pressed="true" data-look="combat">BOT MATCH</button
-                ><button aria-pressed="false" data-look="undead">ZOMBIES</button>
+                ><button aria-pressed="false" data-look="infestation">INFESTATION</button>
               </div>
               <img
                 id="arena-image"
@@ -1188,37 +1205,99 @@
           </div>
         </div>
       </section>
-      <section class="zombie-section" id="zombies">
+      <section class="infestation-section" id="infestation">
         <img
-          src="assets/zombies/maple_court_pearl.webp"
-          alt="Pearl hands a casserole across a Maple Court porch rail while the undead close in at dusk"
-          width="1600"
-          height="900"
+          src="assets/infestation/maple-court.webp"
+          alt="Pearl and Harold on a Maple Court lawn, firing on a black insect with glowing green eyes"
+          width="1280"
+          height="720"
           loading="lazy"
         />
         <div class="wrap section">
-          <div class="zombie-copy reveal">
+          <div class="infestation-copy reveal">
             <span class="eyebrow">04 / AFTER DARK</span>
-            <h2>THE HOA<br />SAID <span>NO ZOMBIES.</span></h2>
+            <h2>THE HOA<br />SAID <span>NO BUGS.</span></h2>
             <p>
-              The power is out, the streetlights are dead and the neighbors are
-              not coming back normal. Every arena turns to night for Zombies:
-              endless waves, headshots that count and a two-handed axe for when
-              the magazine runs dry.
+              The street goes dark and the insects move in. Five classes bring
+              claws, acid and explosive attacks. An orange Skitter strain is
+              smaller, faster, and dies in one shot. Bring the axe when the
+              magazine runs dry.
             </p>
+          </div>
+          <div class="species-grid">
+            <article class="species reveal">
+              <img
+                src="assets/infestation/lurker.webp"
+                alt="Lurker, a heavy eight-legged insect with green eyes and fangs"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+              <span class="eyebrow">EIGHT LEGS · LUNGE</span>
+              <h3>Lurker</h3>
+              <p>Hops the yard, then lunges in close.</p>
+            </article>
+            <article class="species reveal">
+              <img
+                src="assets/infestation/skitter.webp"
+                alt="Skitter, a metallic green and purple six-legged insect"
+                width="1374"
+                height="1145"
+                loading="lazy"
+              />
+              <span class="eyebrow">SIX LEGS · ACID</span>
+              <h3>Skitter</h3>
+              <p>Fast bites, then a spray of acid up close.</p>
+            </article>
+            <article class="species reveal">
+              <img
+                src="assets/infestation/spitter.webp"
+                alt="Spitter, a tan insect with a swollen yellow-green abdomen"
+                width="1370"
+                height="1148"
+                loading="lazy"
+              />
+              <span class="eyebrow">FUSE · BLAST</span>
+              <h3>Spitter</h3>
+              <p>Rushes in on a fuse and detonates.</p>
+            </article>
+            <article class="species reveal">
+              <img
+                src="assets/infestation/crawler.webp"
+                alt="Crawler, a long maroon many-legged insect with heavy claws"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+              <span class="eyebrow">MANY LEGS · BITE</span>
+              <h3>Crawler</h3>
+              <p>A long armored body that closes in and bites.</p>
+            </article>
+            <article class="species reveal">
+              <img
+                src="assets/infestation/hive_tick.webp"
+                alt="Hive Tick, a bulky brown insect with a swollen green back and large claws"
+                width="1374"
+                height="1145"
+                loading="lazy"
+              />
+              <span class="eyebrow">HEAVY · CHARGE</span>
+              <h3>Hive Tick</h3>
+              <p>The heavy one. It plants, then charges.</p>
+            </article>
           </div>
           <div class="mode-grid">
             <article class="mode reveal">
               <span class="eyebrow">SOLO · OFFLINE</span>
-              <h3>Zombies</h3>
+              <h3>Infestation</h3>
               <p>
-                Survive escalating waves of undead operatives. Headshots kill.
-                Call in supplies when it gets ugly.
+                Survive escalating waves of organic insect creatures. Call in
+                supplies when it gets ugly.
               </p>
             </article>
             <article class="mode reveal">
               <span class="eyebrow">ONLINE · CO-OP</span>
-              <h3>Zombie Co-op</h3>
+              <h3>Infestation Co-op</h3>
               <p>
                 Fight the waves together. No friendly fire. Fallen teammates
                 return when a wave clears; a squad wipe ends the run.
@@ -1226,18 +1305,19 @@
             </article>
             <article class="mode reveal">
               <span class="eyebrow">ONLINE · BLUE VS RED</span>
-              <h3>Zombie Team Battle</h3>
+              <h3>Infestation Team Battle</h3>
               <p>
                 Two balanced teams fight each other and the waves. Enemy player:
-                5 points. Zombie: 1 point.
+                5 points. Creature: 1 point. No friendly fire.
               </p>
             </article>
             <article class="mode reveal">
               <span class="eyebrow">ONLINE · HUMANS VS INFECTED</span>
               <h3>Infection</h3>
               <p>
-                One in four starts infected. Humans who die turn. Humans win by
-                surviving the timer.
+                One in four starts infected. Defeated humans join the creature
+                side. Infected use melee and respawn. Humans win by surviving
+                the timer.
               </p>
             </article>
           </div>
@@ -1416,7 +1496,7 @@
           <span class="eyebrow">MAKE IT YOURS</span>
           <p>
             Start with the factory finish. Optional gun finishes, extra
-            operatives and Zombies supplies are available in the game. No loot boxes. No third-party
+            operatives and Infestation supplies are available in the game. No loot boxes. No third-party
             ads.
           </p>
         </div>
@@ -1597,7 +1677,7 @@
           <details>
             <summary>Can I play without an internet connection?</summary>
             <p>
-              Yes. Bot deathmatch, solo Zombies and the gun range work
+              Yes. Bot deathmatch, solo Infestation and the gun range work
               offline. Online matches, TestFlight installation, purchases and
               Apple services require an internet connection.
             </p>
@@ -1625,8 +1705,8 @@
             <summary>Is this a story campaign?</summary>
             <p>
               Fairview’s backstory sets the stage for arena deathmatch. The game
-              offers offline bot matches, endless Zombies waves, online
-              free-for-all, zombie co-op, team battle and infection, and a
+              offers offline bot matches, endless Infestation waves, online
+              free-for-all, Infestation co-op, team battle and infection, and a
               practice range; this site is not announcing a story campaign.
             </p>
           </details>

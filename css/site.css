@@ -2167,13 +2167,13 @@ html:not(.js) .art-controls {
   background: var(--gold);
   color: var(--ink);
 }
-.zombie-section {
+.infestation-section {
   position: relative;
   isolation: isolate;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
 }
-.zombie-section > img {
+.infestation-section > img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -2182,7 +2182,7 @@ html:not(.js) .art-controls {
   object-position: 70% 40%;
   z-index: -2;
 }
-.zombie-section:after {
+.infestation-section:after {
   content: "";
   position: absolute;
   inset: 0;
@@ -2191,18 +2191,18 @@ html:not(.js) .art-controls {
     linear-gradient(90deg, #080f15f2 0%, #080f15b3 38%, #080f1526 70%);
   z-index: -1;
 }
-.zombie-copy {
+.infestation-copy {
   max-width: 560px;
   margin-bottom: 48px;
 }
-.zombie-copy .eyebrow {
+.infestation-copy .eyebrow {
   font-size: 9px;
   margin-bottom: 24px;
 }
-.zombie-copy h2 {
+.infestation-copy h2 {
   margin-bottom: 24px;
 }
-.zombie-copy p {
+.infestation-copy p {
   font-size: 16px;
   color: #c3c8c6;
 }
@@ -2230,13 +2230,49 @@ html:not(.js) .art-controls {
   line-height: 1.7;
   color: #c3c8c6;
 }
+.species-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.species {
+  border: 1px solid var(--line);
+  background: #080f15d9;
+  padding: 12px 12px 18px;
+}
+.species img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 30%;
+  background: #d7d7d7;
+  margin-bottom: 12px;
+}
+.species > .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.4px;
+}
+.species h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 8px 0 6px;
+}
+.species p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #c3c8c6;
+}
 @media (max-width: 980px) {
-  .mode-grid {
+  .mode-grid,
+  .species-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 560px) {
-  .mode-grid {
+  .mode-grid,
+  .species-grid {
     grid-template-columns: 1fr;
   }
   .arena-look {

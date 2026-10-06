@@ -248,13 +248,13 @@
   const showArena = () => {
     const button = $('[data-map][aria-pressed="true"]');
     if (!button) return;
-    const undead = arenaLook === "undead";
+    const infestation = arenaLook === "infestation";
     $("#arena-image").src =
-      `assets/maps/${button.dataset.map}${undead ? "_undead" : ""}.webp`;
+      `assets/maps/${button.dataset.map}${infestation ? "_infestation" : ""}.webp`;
     $("#arena-image").alt =
-      `${button.dataset.title} in-game arena preview${undead ? ", Zombies lighting" : ""}`;
-    $("#arena-kind").textContent = undead
-      ? "IN-GAME ARENA PREVIEW / ZOMBIES"
+      `${button.dataset.title} in-game arena preview${infestation ? ", Infestation lighting" : ""}`;
+    $("#arena-kind").textContent = infestation
+      ? "IN-GAME ARENA PREVIEW / INFESTATION"
       : "IN-GAME ARENA PREVIEW";
     $("#arena-title").textContent = button.dataset.title;
     $("#arena-description").textContent = button.dataset.blurb;
