@@ -72,9 +72,10 @@
           Effective September 13, 2026 · Last updated October 6, 2026
         </p>
         <p>
-          This policy covers the <strong>Civic Watch</strong> iOS/iPadOS app and
-          related support pages, operated by
-          <strong>Valux Games LLC</strong> (“we”, “us”), 127 W Hargett St Ste 301 PMB 119, Raleigh, NC 27601, USA. Contact:
+          This policy covers the <strong>Civic Watch</strong> apps for
+          iOS/iPadOS and Android and the website at civicwatchgame.com,
+          operated by <strong>Valux Games LLC</strong> (“we”, “us”), 127 W
+          Hargett St Ste 301 PMB 119, Raleigh, NC 27601, USA. Contact:
           <a href="mailto:support@valuxgames.com">support@valuxgames.com</a
           >.
         </p>
@@ -82,29 +83,43 @@
         <h2>1. The short version</h2>
         <p>
           We built a multiplayer FPS, not an ad network. We do not sell your
-          personal information. We do not show third-party ads. We do not track
-          you across other companies’ apps. Payments go through Apple. Online
-          lobbies only use what you choose to share for matchmaking. Bot matches
-          work without an account. This website uses Google Analytics to count
-          visits.
+          personal information. We do not show third-party ads. We do not
+          track you across other companies’ apps or websites. Payments go
+          through Apple on iOS and Google Play on Android. Bot matches work
+          without an account. The apps send gameplay analytics to our analytics
+          provider, GameAnalytics, so we can see how the game is played and fix
+          problems. Online lobbies need your display name and your network
+          address so other players can connect to your room. This website uses
+          Google Analytics to count visits.
         </p>
 
         <h2>2. Information we may have</h2>
         <ul>
           <li>
-            <strong>Display name</strong> — the name you type for lobby listings
-            and in-match scoreboards, visible to other players in that lobby or
-            match.
+            <strong>Display name</strong> — the name you type for lobby
+            listings and in-match scoreboards, visible to other players in that
+            lobby or match.
           </li>
           <li>
-            <strong>Party codes &amp; lobby listings</strong> — short-lived room
-            codes, player counts, map choice, and host reachability so others
-            can join.
+            <strong>Party codes &amp; lobby listings</strong> — when you host an
+            online room, the listing holds the party name, your display name
+            and the names of players in the room, the mode and map, the room
+            code, and your device’s public IP address, local network address,
+            and port so other devices can connect. Anyone who has the room code
+            can look up the listing, including the host’s IP addresses.
           </li>
           <li>
-            <strong>Optional install id hash</strong> — a hashed installation
-            credential used to authenticate lobby connections. It identifies the
-            install to the lobby service; it is not an advertising ID.
+            <strong>Installation credential</strong> — the app creates a random
+            credential on first launch and uses it to authenticate lobby
+            connections. Our lobby service stores only a hash of it, which
+            identifies the installation for rooms, reports, and bans. It is not
+            an advertising ID.
+          </li>
+          <li>
+            <strong>Player reports and blocking</strong> — a report holds the
+            reporter’s and the reported player’s installation hashes, the party
+            code, a reason category, and timestamps. Blocks you set stay on
+            your device.
           </li>
           <li>
             <strong>Gameplay in a match</strong> — positions, shots, and round
@@ -114,88 +129,151 @@
           </li>
           <li>
             <strong>Purchases</strong> — optional operatives and gun finishes
-            are billed by Apple as non-consumable In-App Purchases. Watch Coin
-            packs and Infestation supplies are billed as consumable In-App
-            Purchases. Apple sends the app a receipt so it can unlock or credit
-            what you bought. We never see your full card number. Restore
-            Purchases is in Settings → Profile and restores operatives and
-            finishes. Consumable coins and supplies cannot be restored.
+            are non-consumable In-App Purchases, and Watch Coin packs and
+            Infestation supplies are consumable In-App Purchases, billed by
+            Apple on iOS and by Google Play on Android. The store tells the app
+            what you bought so it can unlock or credit it. We never see your
+            card number. Restore Purchases is in Settings → Profile and restores
+            operatives and finishes; consumable coins and supplies cannot be
+            restored. The item bought and its list price are also recorded in
+            product analytics (below).
           </li>
           <li>
-            <strong>Game Center</strong> — when you sign in, Apple processes
-            your Game Center identity, eligible leaderboard scores, and
-            achievement progress. Sign-in is optional. The app stores progress
+            <strong>Game Center (iOS)</strong> — when you sign in, Apple
+            processes your Game Center identity, eligible leaderboard scores,
+            and achievement progress. Sign-in is optional, and the app asks
+            before reading your Game Center friends. The app stores progress
             and pending reports locally to retry interrupted submissions.
           </li>
           <li>
-            <strong>Support email</strong> — if you write us, we keep the thread
-            long enough to help you.
+            <strong>Reminders</strong> — notifications are scheduled on your
+            device. The app uses the times you recently started playing, stored
+            on your device, to pick a reminder time. Nothing about this is sent
+            to us, and you can turn notifications off in your device settings.
           </li>
           <li>
-            <strong>Diagnostics</strong> — if you have Apple Analytics / crash
-            reporting enabled, we may receive crash logs and coarse device type
-            so we can fix bugs.
+            <strong>Support email</strong> — if you write us, we keep the
+            thread long enough to help you.
           </li>
           <li>
-            <strong>Product analytics (iOS)</strong> — the iOS app sends session
-            and match events (mode and map), coarse device details, and an
-            install identifier to GameAnalytics so we can see whether the game
-            is being played. We do not request App Tracking Transparency and we
-            do not read the advertising identifier. Android does not send these
-            events yet. We do not sell this information and we do not use it
-            for advertising.
+            <strong>Diagnostics</strong> — if you share analytics with Apple,
+            we may receive crash logs and coarse device type. Google Play
+            provides us crash and performance reports for the Android app. The
+            apps also report errors and crashes to GameAnalytics (below).
           </li>
           <li>
-            <strong>This website</strong> — the site may log standard request
-            metadata (IP, user agent). Google Analytics (tag G-5CKV6VD9KM)
-            measures which pages are opened. Google may set cookies and receive
-            pages viewed, approximate location, device, and browser information.
-            We do not run advertising pixels.
+            <strong>Product analytics (GameAnalytics)</strong> — the iOS and
+            Android apps send these events to GameAnalytics:
+            <ul>
+              <li>sessions (start, end, length);</li>
+              <li>
+                matches started, finished, and failed, with the mode, map, and
+                your kills; rank-ups; gun-range hits; and supply use;
+              </li>
+              <li>
+                Watch Coins and Infestation points earned and spent, with the
+                item involved;
+              </li>
+              <li>
+                real-money purchases: the item, its type, and its US-dollar
+                list price (not your receipt or payment details);
+              </li>
+              <li>errors and crash reports;</li>
+              <li>
+                device details: model, operating system version, CPU and GPU
+                model, core count, and memory use.
+              </li>
+            </ul>
+            Events are linked to a random identifier that GameAnalytics creates
+            for your installation, together with your device’s vendor
+            identifier (IDFV) on iOS or app set ID on Android. GameAnalytics
+            receives your IP address with each connection and uses it to
+            estimate your country. We do not request App Tracking Transparency,
+            we do not read your advertising identifier, and we do not send your
+            display name, Game Center identity, or installation credential to
+            GameAnalytics. We use this information to understand how the game
+            is played and to fix bugs and balance problems. We do not sell it
+            and we do not use it for advertising.
+          </li>
+          <li>
+            <strong>This website</strong> — the host may log standard request
+            metadata (IP address, user agent). Google Analytics (tag
+            G-5CKV6VD9KM) measures which pages are opened. It sets first-party
+            cookies named <code>_ga</code> and <code>_ga_5CKV6VD9KM</code>,
+            which last up to two years, and Google receives the pages viewed,
+            approximate location, and device and browser information. We do not
+            run advertising pixels.
           </li>
         </ul>
 
         <h2>3. What we do not do</h2>
         <ul>
           <li>We do not sell personal information.</li>
-          <li>We do not run third-party advertising or cross-app tracking.</li>
+          <li>
+            We do not run third-party advertising, and we do not track you
+            across other companies’ apps or websites.
+          </li>
           <li>
             We do not record or transmit voice. There is no microphone
             permission.
           </li>
           <li>We do not require a Civic Watch account to play bot matches.</li>
           <li>We do not use loot boxes or randomized paid rewards.</li>
-          <li>
-            We do not knowingly collect personal information from children for
-            marketing. The app is not in Apple’s Kids Category.
-          </li>
         </ul>
 
-        <h2>4. Who else sees data</h2>
+        <h2>4. Children</h2>
+        <p>
+          Civic Watch is made for teens and adults. It is not directed to
+          children under 13, it is not in Apple’s Kids Category, and it is not
+          part of Google Play’s Families program. We do not knowingly collect
+          personal information from children under 13. If you believe a child
+          under 13 has used the app’s online features or sent us personal
+          information, email
+          <a href="mailto:support@valuxgames.com">support@valuxgames.com</a> and
+          we will delete what we hold.
+        </p>
+
+        <h2>5. Who else sees data</h2>
         <ul>
           <li>
             <strong>Apple</strong> — App Store, TestFlight, In-App Purchases,
-            optional Game Center, and optional crash analytics you enable on the
-            device.
+            optional Game Center, and crash analytics you choose to share from
+            your device.
           </li>
           <li>
-            <strong>GameAnalytics</strong> — on iOS, receives the product
-            analytics described above. Their service is at gameanalytics.com.
+            <strong>Google Play</strong> — distribution, Play Billing, and
+            Play’s own install, crash, and performance reports for the Android
+            app, under Google’s terms.
           </li>
           <li>
-            <strong>Other players in your match or lobby</strong> — your display
-            name and in-match activity.
+            <strong>GameAnalytics</strong> — GameAnalytics ApS (Copenhagen,
+            Denmark) and GameAnalytics Limited (London, UK) process the product
+            analytics described above on our behalf, as our service provider.
+            Their data is hosted with Amazon Web Services and Google Cloud. See
+            the
+            <a href="https://www.gameanalytics.com/trust/privacy-notice"
+              >GameAnalytics privacy notice</a
+            >.
+          </li>
+          <li>
+            <strong>Other players in your match or lobby</strong> — your
+            display name and in-match activity. When you host an online room,
+            players who join with the code receive your IP addresses so their
+            devices can connect to yours.
+          </li>
+          <li>
+            <strong>Google Cloud</strong> — hosts the online lobby registry,
+            player reports, and gameplay relay (Cloud Run and Firestore in the
+            United States). The lobby service sees party listings, hashed
+            installation credentials, IP addresses, and the logs needed to keep
+            rooms working.
           </li>
           <li>
             <strong>Google Analytics</strong> — measures visits to
-            civicwatchgame.com, as described above. This is separate from the
-            Google Cloud lobby service.
-          </li>
-          <li>
-            <strong>Google Cloud</strong> — hosts the online lobby registry and
-            gameplay relay (Cloud Run and Firestore). The lobby service may see
-            party listings, hashed install ids, IP addresses, and diagnostic
-            logs needed to keep rooms working. Listings expire when a host stops
-            refreshing (about 70 seconds).
+            civicwatchgame.com, as described above, under
+            <a href="https://policies.google.com/privacy"
+              >Google’s privacy policy</a
+            >. This is separate from the Google Cloud lobby service.
           </li>
         </ul>
         <p>
@@ -203,16 +281,35 @@
           from harm.
         </p>
 
-        <h2>5. Retention</h2>
-        <p>
-          Lobby listings are short-lived and drop when a host stops refreshing.
-          Gameplay relay traffic is not stored as a match recording.
-          Infrastructure logs and support mail may remain after a match ends
-          according to operational need. Purchase entitlements follow Apple’s
-          records. Contact us to request deletion of information we hold.
-        </p>
+        <h2>6. Retention</h2>
+        <ul>
+          <li>
+            A lobby listing stops being shown about 70 seconds after its host
+            stops refreshing it. Expired listings, including the host’s IP
+            addresses, and player reports are not erased from the database at
+            that moment; we delete them in periodic cleanup. Email us to have
+            yours deleted sooner.
+          </li>
+          <li>
+            Gameplay relay traffic is not stored as a match recording.
+          </li>
+          <li>
+            GameAnalytics keeps raw analytics events, including device
+            identifiers, IP addresses, and crash reports, for up to 12 months.
+            We keep aggregated statistics that do not identify you.
+          </li>
+          <li>
+            Google Analytics keeps event-level website data for up to 14
+            months.
+          </li>
+          <li>
+            Infrastructure logs and support mail may remain after a match ends
+            according to operational need.
+          </li>
+          <li>Purchase entitlements follow Apple’s and Google Play’s records.</li>
+        </ul>
 
-        <h2>6. Your choices</h2>
+        <h2>7. Your choices</h2>
         <ul>
           <li>Play offline bot matches without joining online lobbies.</li>
           <li>
@@ -224,18 +321,27 @@
             Settings → Profile.
           </li>
           <li>
-            Restore Apple-purchased operatives and gun finishes in Settings →
-            Profile. Consumable Watch Coins and Infestation supplies cannot be
-            restored.
+            Restore purchased operatives and gun finishes in Settings → Profile
+            with the same Apple Account or Google account that bought them.
+            Consumable Watch Coins and Infestation supplies cannot be restored.
           </li>
           <li>Manage Game Center sign-in and privacy in iOS Settings.</li>
           <li>
-            Block or delete cookies in your browser if you do not want Google
-            Analytics to measure your visit to this website.
+            Turn notifications off, or decline local-network access for LAN
+            match discovery, in your device settings.
           </li>
           <li>
-            Decline local-network access in iOS Settings if you do not want LAN
-            match discovery.
+            The apps do not yet have an in-game switch for product analytics.
+            To object to it, or to have the analytics linked to your
+            installation deleted, email us. Uninstalling the app stops all
+            analytics.
+          </li>
+          <li>
+            Block or delete cookies, or install the
+            <a href="https://tools.google.com/dlpage/gaoptout"
+              >Google Analytics Opt-out Browser Add-on</a
+            >, if you do not want Google Analytics to measure your visits to
+            this website.
           </li>
           <li>
             Email
@@ -243,31 +349,44 @@
               >support@valuxgames.com</a
             >
             to access, correct, or delete information we hold, or to exercise
-            applicable privacy rights (including EEA/UK residents).
+            other privacy rights that apply to you (including in the EEA and
+            UK).
           </li>
         </ul>
 
-        <h2>7. International visitors</h2>
+        <h2>8. EEA and UK</h2>
         <p>
-          The app and site are operated from the United States. If you play from
-          another country, your information may be processed in the US
-          (including Google Cloud in the United States).
+          We process product analytics, lobby and safety data, and website
+          analytics because we have a legitimate interest in running,
+          protecting, and improving the game and the site. We process purchase
+          data to provide what you bought. You may object to processing based
+          on legitimate interests, and you may complain to your data protection
+          authority.
         </p>
 
-        <h2>8. California / similar US state laws</h2>
+        <h2>9. International visitors</h2>
+        <p>
+          The app and site are operated from the United States. Your
+          information may be processed in the US (including Google Cloud in the
+          United States) and by GameAnalytics in the EU and UK and with its
+          cloud providers. GameAnalytics relies on the EU Standard Contractual
+          Clauses for transfers out of the EEA.
+        </p>
+
+        <h2>10. California / similar US state laws</h2>
         <p>
           We do not sell or share personal information as those laws define
           “sale” or “share” for cross-context advertising. To exercise access or
           deletion rights, email us.
         </p>
 
-        <h2>9. Changes</h2>
+        <h2>11. Changes</h2>
         <p>
           If this policy changes in a material way, we will update the date at
           the top of this page.
         </p>
 
-        <h2>10. Contact</h2>
+        <h2>12. Contact</h2>
         <p>
           Valux Games LLC<br />127 W Hargett St Ste 301 PMB 119<br />Raleigh, NC
           27601<br />USA<br /><a href="mailto:support@valuxgames.com"
