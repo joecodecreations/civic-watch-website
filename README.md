@@ -2,6 +2,8 @@
 
 The official static website for **Civic Watch**, intended for `https://civicwatchgame.com` and hosted on GitHub Pages. The Mecca Gecko website informed the cinematic landing-page structure; Civic Watch supplies the art, copy, cast and navy/gold UI palette.
 
+The full Civic Watch video library (commercials, trailers, gameplay, social clips) is not on this Mac's internal disk. It was moved from `~/Downloads/civic-watch-video` to `/Volumes/external/projects/civic-watch-video` on 2026-10-11. Mount `/Volumes/external` to use it. The site's small web trailer in `assets/trailer/` is separate and stayed in this repo.
+
 ## Preview and validate
 
 No npm install or build is required. From this folder:
@@ -19,7 +21,7 @@ node --check js/site.js
 
 ## Editing
 
-- `index.html`: gameplay trailer (`#trailer`), game overview, searchable cast, arena picker (with a Bot match / Infestation lighting toggle), Infestation modes and the five insect classes, arsenal, Xbox controller diagrams, gallery, FAQs and beta invitation. The old browser demo is gone.
+- `index.html`: gameplay trailer (`#trailer`), game overview, searchable cast, arena picker (with a Bot match / Infestation lighting toggle), Infestation modes and the five insect classes, arsenal, Xbox controller diagrams, gallery, FAQs and store links. The old browser demo is gone.
 - `story.html`: full canonical Fairview backstory.
 - `support.html`, `privacy.html`, `terms.html`: existing game support and legal content, with updated shared design and URLs.
 - `css/site.css`: responsive styles, animations and reduced-motion behavior. Colors match the game's `UiChrome`: ink `#080f15`, gold `#d9b66e`, text `#e7e8e6`, panel `#111b23`, line `#2b353b`.
@@ -38,6 +40,8 @@ node --check js/site.js
 Keep descriptive copy consistent with the game. There are **29 selectable operatives**, **2 bot-only rivals**, **14 arenas**, a separate practice range, **14 firearms** plus a knife or two-handed axe for melee. Every arena has a combat plate (`assets/maps/<id>.webp`) and an Infestation plate (`assets/maps/<id>_infestation.webp`). Game modes: bot deathmatch, solo Infestation, and online free-for-all, Infestation co-op, Infestation team battle, infection and gun range events. The five Infestation classes are Lurker, Skitter, Spitter, Crawler and Hive Tick. Weapon names match the game's catalog (Timber 47, Hedgecutter, Sandpiper, Picket 9 and so on). Personality jokes are not ability descriptions. Loading illustrations are explicitly labeled separately from in-game arena previews. Use the name Infestation for that mode.
 
 The TestFlight invitation was carried over from the existing game website and verified to resolve to **Civic Watch FPS** on September 20, 2026. Beta places and supported builds are controlled by App Store Connect. It was taken off the site on September 21, 2026 and put back on September 24, 2026.
+
+As of October 11, 2026 the public call to action is the App Store and Google Play. The Android package is `com.valuxgames.civicwatch`.
 
 ## GitHub Pages
 
