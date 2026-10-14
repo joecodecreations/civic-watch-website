@@ -19,6 +19,9 @@ class Document(HTMLParser):
         self.arenas += 'data-map' in a
         self.weapons += a.get('class') == 'weapon'
 docs = {p: Document(p) for p in ROOT.glob('*.html')}
+# The press and creator kit page lives in its own folder (press/index.html).
+PRESS = ROOT/'press'/'index.html'
+if PRESS.exists(): docs[PRESS] = Document(PRESS)
 # Promo link pages (scripts/build_promo.py) are generated folders listed in promo/generated.json.
 import json, subprocess
 promo_dirs = json.loads((ROOT/'promo'/'generated.json').read_text()).get('dirs', []) if (ROOT/'promo'/'generated.json').exists() else []
@@ -48,7 +51,7 @@ for actual, expected, label in [(main.cards,31,'dossiers'), (main.arenas,14,'are
     if actual != expected: errors.append(f'Expected {expected} {label}, found {actual}')
 if (ROOT/'CNAME').read_text().strip() != 'civicwatchgame.com': errors.append('Incorrect CNAME')
 TAG = 'G-5CKV6VD9KM'
-for path in list(ROOT.glob('*.html')) + list((ROOT/'play').glob('*.html')):
+for path in list(ROOT.glob('*.html')) + list((ROOT/'play').glob('*.html')) + ([PRESS] if PRESS.exists() else []):
     text = path.read_text()
     if f'googletagmanager.com/gtag/js?id={TAG}' not in text or f"gtag('config', '{TAG}')" not in text:
         errors.append(f'{path.relative_to(ROOT)}: missing Google tag {TAG}')
@@ -63,4 +66,4 @@ if (ROOT/'promo'/'links.json').exists():
     if check.returncode: errors.append(check.stdout.strip() or check.stderr.strip())
 if errors:
     print('\n'.join(errors)); sys.exit(1)
-print(f'PASS: {len(docs)} pages ({len(promo_pages)} promo), local links/anchors, image and font references, 31 dossiers, 14 arenas, 14 weapons, CNAME.')
+print(f'PASS: {len(docs)} pages ({len(promo_pages)} promo, press kit {"yes" if PRESS.exists() else "no"}), local links/anchors, image and font references, 31 dossiers, 14 arenas, 14 weapons, CNAME.')
