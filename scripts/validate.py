@@ -19,6 +19,11 @@ class Document(HTMLParser):
         self.arenas += 'data-map' in a
         self.weapons += a.get('class') == 'weapon'
 docs = {p: Document(p) for p in ROOT.glob('*.html')}
+# Promo link pages (scripts/build_promo.py) are generated folders listed in promo/generated.json.
+import json, subprocess
+promo_dirs = json.loads((ROOT/'promo'/'generated.json').read_text()).get('dirs', []) if (ROOT/'promo'/'generated.json').exists() else []
+promo_pages = [ROOT/d/'index.html' for d in promo_dirs]
+docs.update({p: Document(p) for p in promo_pages if p.exists()})
 errors = []
 for path, doc in docs.items():
     if doc.h1 != 1: errors.append(f'{path.name}: expected one h1, got {doc.h1}')
@@ -47,6 +52,15 @@ for path in list(ROOT.glob('*.html')) + list((ROOT/'play').glob('*.html')):
     text = path.read_text()
     if f'googletagmanager.com/gtag/js?id={TAG}' not in text or f"gtag('config', '{TAG}')" not in text:
         errors.append(f'{path.relative_to(ROOT)}: missing Google tag {TAG}')
+for path in promo_pages:
+    if not path.exists(): errors.append(f'{path.relative_to(ROOT)}: listed in promo/generated.json but missing'); continue
+    text = path.read_text()
+    if f'googletagmanager.com/gtag/js?id={TAG}' not in text or f"gtag('config', '{TAG}')" not in text:
+        errors.append(f'{path.relative_to(ROOT)}: missing Google tag {TAG}')
+    if '<meta name="robots" content="noindex" />' not in text: errors.append(f'{path.relative_to(ROOT)}: promo pages must be noindex')
+if (ROOT/'promo'/'links.json').exists():
+    check = subprocess.run([sys.executable, str(ROOT/'scripts'/'build_promo.py'), '--check'], capture_output=True, text=True)
+    if check.returncode: errors.append(check.stdout.strip() or check.stderr.strip())
 if errors:
     print('\n'.join(errors)); sys.exit(1)
-print(f'PASS: {len(docs)} pages, local links/anchors, image and font references, 31 dossiers, 14 arenas, 14 weapons, CNAME.')
+print(f'PASS: {len(docs)} pages ({len(promo_pages)} promo), local links/anchors, image and font references, 31 dossiers, 14 arenas, 14 weapons, CNAME.')

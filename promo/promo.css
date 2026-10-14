@@ -1,0 +1,194 @@
+/* Promo link pages. Shares the tokens in css/site.css (ink, panel, line, gold, text, muted). */
+.promo-nav .nav-inner {
+  height: 72px;
+}
+.promo-nav .brand small {
+  display: none;
+}
+.promo-host {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+}
+.promo {
+  min-height: calc(100vh - 72px);
+  min-height: calc(100svh - 72px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  place-items: start center;
+  padding-block: 40px 64px;
+  background:
+    radial-gradient(ellipse 70% 45% at 50% 0%, rgba(217, 182, 110, 0.14), transparent 70%),
+    var(--ink);
+}
+.promo-card {
+  width: min(560px, 100%);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 22px;
+}
+.promo-card h1 {
+  font-size: clamp(54px, 15vw, 88px);
+  letter-spacing: -1px;
+}
+.promo-card h1 .promo-variant {
+  color: var(--text);
+}
+.promo-card h1 em {
+  font-style: normal;
+  color: var(--gold);
+}
+.promo-qr:empty {
+  display: none;
+}
+.promo-lede {
+  font-size: 17px;
+  line-height: 1.6;
+}
+.promo-reward {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+}
+.promo-reward img {
+  width: 84px;
+  height: 84px;
+  flex-shrink: 0;
+  border: 1px solid #78643f;
+  background: #0c151c;
+}
+.promo-reward b {
+  display: block;
+  font: 700 26px/1 var(--display);
+  letter-spacing: 0.5px;
+  color: var(--text);
+}
+.promo-reward small {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.promo-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+.promo-panel .button {
+  width: 100%;
+  min-height: 60px;
+  font-size: 13px;
+}
+.promo-steps {
+  margin: 0;
+  padding-left: 22px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.promo-steps b {
+  color: var(--text);
+}
+.promo-code {
+  display: flex;
+  align-items: stretch;
+  border: 1px dashed var(--gold);
+  background: #0c151c;
+}
+.promo-code input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  background: transparent;
+  color: var(--gold);
+  font: 700 30px/1 var(--display);
+  letter-spacing: 3px;
+}
+.promo-code button {
+  min-width: 112px;
+  padding: 0 16px;
+  border: 0;
+  border-left: 1px dashed var(--gold);
+  background: transparent;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+.promo-code button:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+.promo-alt {
+  justify-self: center;
+}
+.promo-desktop {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+  align-items: center;
+}
+.promo-qr {
+  width: 180px;
+  height: 180px;
+  padding: 6px;
+  background: #fff;
+}
+.promo-qr svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.promo-desktop .cta-row {
+  display: grid;
+  gap: 12px;
+}
+.promo-form {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+.promo-form label {
+  font: 700 22px/1.1 var(--display);
+  letter-spacing: 0.4px;
+}
+.promo-form .promo-code input {
+  font-size: 26px;
+}
+.promo-error {
+  font-size: 13px;
+  color: #f0a58f;
+}
+.promo .fineprint {
+  margin-top: 4px;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 700px) {
+  .promo-nav .wrap,
+  .promo .wrap,
+  .promo-footer.wrap {
+    width: calc(100% - 32px);
+  }
+  .promo {
+    padding-block: 28px 48px;
+  }
+  .promo-desktop {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .promo-host {
+    display: none;
+  }
+}

@@ -43,6 +43,22 @@ The TestFlight invitation was carried over from the existing game website and ve
 
 As of October 11, 2026 the public call to action is the App Store and Google Play. The Android package is `com.valuxgames.civicwatch`.
 
+## Promo links
+
+Per-video links for marketing videos: `civicwatchgame.com/412` is video VG-0412 from the ValuxGames studio. The studio owns the data. Its `python3 scripts/promo.py sync` (in `~/projects/ValuxGamesMarketing`, docs/PROMO_LINKS.md) writes `promo/links.json` and `promo/rewards/<id>.webp`, then runs `scripts/build_promo.py`. Don't edit the generated pages by hand.
+
+- `scripts/build_promo.py` writes `/<number>/` for each promo video, the bio pages `/tt/ /yt/ /ig/ /fb/ /x/` and `/free/`, the fallback `/go/?c=<number>`, `promo/codes.json` (the codes Civic's Android Settings › Profile › Redeem code accepts, golden-eye `docs/PROMO_CODES.md`) and `promo/generated.json`, the manifest it uses to remove pages that are no longer listed. It refuses to overwrite a folder it didn't make. `--check` reports drift, and `scripts/validate.py` runs it. Script and style URLs carry a content hash (`?v=`), so a rebuilt page never pairs with a cached older file.
+- `404.html` starts with a router: `/412`, `/0412` or `/VG-0412` without a built page goes to `/go/?c=412`, and `/TT` goes to `/tt/`. A video can therefore post before its page is built.
+- `promo/promo.js` picks the device:
+  - **iPhone/iPad:** Apple's offer-code redemption when `reward.apple_code` is set, otherwise the App Store with `pt`/`ct` campaign tags when `apple.pt` is set.
+  - **Android:** the reward code with a copy button, and Google Play with a `referrer=utm_source=<via>&utm_medium=video&utm_campaign=v<number>` tag.
+  - **Desktop:** a QR code (`promo/qr.js`, a small dependency-free encoder) and both stores.
+
+  It also sends the GA4 events `promo_view`, `promo_claim`, `promo_copy` and `promo_code_entered`.
+- The inline script at the top of each page settles `?via=` before `gtag('config')`, so the page_view URL carries the source. It turns GA off on localhost.
+- Promo pages are `noindex` and not in the sitemap.
+- Local preview: `python3 -m http.server 4173 --bind 127.0.0.1`, then `/go/?c=412&preview_os=ios|android|desktop&preview_reward=1`. The preview switches only work on localhost. `http.server` doesn't serve `404.html`, so open `/go/?c=…` directly.
+
 ## GitHub Pages
 
 Repository: https://github.com/joecodecreations/civic-watch-website

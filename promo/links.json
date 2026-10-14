@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-12T13:55:22+00:00",
+  "generated_by": "ValuxGamesMarketing scripts/promo.py sync (config/promo.json)",
+  "site": "https://civicwatchgame.com",
+  "game": "civic",
+  "apple": {
+    "app_id": "6811555006",
+    "pt": "",
+    "store_url": "https://apps.apple.com/us/app/civic-watch-fps/id6811555006"
+  },
+  "play": {
+    "package": "com.valuxgames.civicwatch",
+    "store_url": "https://play.google.com/store/apps/details?id=com.valuxgames.civicwatch"
+  },
+  "reward": {
+    "id": "auric_mirror",
+    "name": "Auric Mirror",
+    "label": "Auric Mirror gun skin",
+    "image": "/promo/rewards/auric_mirror.webp",
+    "apple_code": "",
+    "android_code": "",
+    "starts": "",
+    "ends": ""
+  },
+  "bio": {
+    "tt": "TikTok",
+    "yt": "YouTube",
+    "ig": "Instagram",
+    "fb": "Facebook",
+    "x": "X"
+  },
+  "videos": [],
+  "game_codes": [
+    {
+      "code": "CIVICGOLD",
+      "label": "Auric Mirror gun skin",
+      "grants": [
+        {
+          "kind": "skin",
+          "id": "auric_mirror"
+        }
+      ],
+      "starts": "2026-10-12",
+      "ends": ""
+    }
+  ]
+}

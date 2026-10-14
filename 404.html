@@ -1,6 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      // Promo links (README "Promo links"): a video number with no page yet (/412) or an
+      // upper-case bio slug (/TT) goes to its promo page before anything else loads.
+      (function () {
+        var path = location.pathname, query = location.search.replace(/^\?/, "");
+        var number = path.match(/^\/(?:vg-?)?0*([1-9][0-9]{0,5})\/?$/i);
+        if (number) {
+          location.replace("/go/?c=" + number[1] + (query ? "&" + query : ""));
+        } else if (/^\/(TT|YT|IG|FB|X|FREE)\/?$/i.test(path) && path !== path.toLowerCase()) {
+          location.replace(path.toLowerCase().replace(/\/?$/, "/") + (query ? "?" + query : ""));
+        }
+      })();
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5CKV6VD9KM"></script>
     <script>

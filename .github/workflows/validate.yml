@@ -13,4 +13,4 @@ jobs:
       - name: Validate pages, links and assets
         run: python3 scripts/validate.py
       - name: Check JavaScript syntax
-        run: node --check js/site.js
+        run: node --check js/site.js && node --check promo/promo.js && node --check promo/qr.js
