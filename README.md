@@ -41,7 +41,7 @@ Keep descriptive copy consistent with the game. There are **29 selectable operat
 
 The TestFlight invitation was carried over from the existing game website and verified to resolve to **Civic Watch FPS** on September 20, 2026. Beta places and supported builds are controlled by App Store Connect. It was taken off the site on September 21, 2026 and put back on September 24, 2026.
 
-As of October 11, 2026 the public call to action is the App Store and Google Play. The Android package is `com.valuxgames.civicwatch`.
+As of October 11, 2026 the public call to action is the App Store and Google Play. The Android package is `com.valuxgames.civicwatch`. Since October 19, 2026 the hero (the first screen) leads with App Store and Google Play buttons (`.store-row` / `.store-button` in `css/site.css`), and they stay above the fold down to a 375×667 phone. The `#join` section at the bottom repeats both links. When `css/site.css` changes, bump the `?v=` tag on its link in `index.html` so returning visitors don't get a cached copy.
 
 ## Promo links
 

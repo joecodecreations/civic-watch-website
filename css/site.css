@@ -352,11 +352,63 @@ p {
   place-items: center;
   font-size: 17px;
 }
+.store-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 27px;
+}
+.store-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  min-width: 196px;
+  padding: 10px 22px 10px 18px;
+  background: var(--ink);
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  color: var(--text);
+  box-shadow: 0 6px 24px #0008;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.2s;
+}
+.store-button:hover {
+  background: var(--gold);
+  color: var(--ink);
+  transform: translateY(-2px);
+}
+.store-button svg {
+  width: 28px;
+  height: 28px;
+  flex: none;
+}
+.store-button span {
+  display: flex;
+  flex-direction: column;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0.2px;
+}
+.store-button small {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
 .platform-note {
   font-size: 9px;
   letter-spacing: 1.4px;
   margin-top: 19px;
   color: #9ea4a5;
+}
+.platform-note a {
+  color: var(--gold);
+  white-space: nowrap;
 }
 .hero-bottom {
   display: flex;
@@ -1589,6 +1641,28 @@ dialog::backdrop {
     width: 24px;
     font-size: 14px;
   }
+  .store-row {
+    gap: 10px;
+    margin-top: 22px;
+  }
+  .store-button {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 56px;
+    gap: 9px;
+    padding: 8px 12px;
+  }
+  .store-button svg {
+    width: 24px;
+    height: 24px;
+  }
+  .store-button span {
+    font-size: 17px;
+  }
+  .store-button small {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+  }
   .platform-note {
     font-size: 8px;
     letter-spacing: 1px;
@@ -2005,6 +2079,15 @@ dialog::backdrop {
   }
   .error-page h1 {
     font-size: 59px;
+  }
+}
+/* Short phones (iPhone SE): keep the store buttons above the fold. */
+@media (max-width: 600px) and (max-height: 760px) {
+  .hero {
+    min-height: 600px;
+  }
+  .hero-copy {
+    padding-top: 90px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
